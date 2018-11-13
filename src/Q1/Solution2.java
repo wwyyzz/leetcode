@@ -2,7 +2,7 @@ package Q1;
 
 import java.util.ArrayList;
 
-public class solution2 {
+public class Solution2 {
     public static void main(String[] args) {
         ArrayList<Integer> nums = new ArrayList();
         nums.add(2);
@@ -11,7 +11,7 @@ public class solution2 {
         nums.add(17);
 
         int target = 9;
-        int[] result = new Solution2().twoSum(nums, target );
+        int[] result = new s2().twoSum(nums, target );
 
         for (Integer i:result
              ) {
@@ -21,7 +21,7 @@ public class solution2 {
 }
 
 
-class Solution2 {
+class s2 {
     public int[] twoSum(ArrayList<Integer> nums, int target) {
         int[] result = {1,1};
         for (int i = 0; i < nums.size(); i++) {
