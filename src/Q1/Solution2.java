@@ -1,14 +1,13 @@
 package Q1;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 public class Solution2 {
     public static void main(String[] args) {
-        ArrayList<Integer> nums = new ArrayList();
-        nums.add(2);
-        nums.add(9);
-        nums.add(7);
-        nums.add(17);
+        int[] nums = {2, 7, 9, 17};
 
         int target = 9;
         int[] result = new s2().twoSum(nums, target );
@@ -22,16 +21,28 @@ public class Solution2 {
 
 
 class s2 {
-    public int[] twoSum(ArrayList<Integer> nums, int target) {
+    public int[] twoSum(int[] nums, int target) {
         int[] result = {1,1};
-        for (int i = 0; i < nums.size(); i++) {
-            for (int j = i + 1; j < nums.size(); j++) {
-                if (target == nums.get(i) + nums.get(j)){
-                    result[0] = i + 1;
-                    result[1] = j + 1;
-                }
+        Map<Integer,Integer> nums_map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            nums_map.put(nums[i], i);
+            }
+        System.out.println("hums_map = "+ nums_map);
+
+//        Iterator iter = nums_map.entrySet().iterator();
+//        while (iter.hasNext()){
+//
+//        }
+
+
+        int complement = 0;
+        for (int i = 0; i < nums.length; i++) {
+            complement = target - nums[i];
+            if (nums_map.containsKey(complement) && nums_map.get(complement)!= i){
+                return new int[]{i, nums_map.get(complement)};
             }
         }
+
 
         return result;
     }
