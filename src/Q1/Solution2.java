@@ -22,17 +22,13 @@ public class Solution2 {
 
 class s2 {
     public int[] twoSum(int[] nums, int target) {
-        int[] result = {1,1};
+        int[] result = {};
         Map<Integer,Integer> nums_map = new HashMap<>();
+
         for (int i = 0; i < nums.length; i++) {
             nums_map.put(nums[i], i);
             }
         System.out.println("hums_map = "+ nums_map);
-
-//        Iterator iter = nums_map.entrySet().iterator();
-//        while (iter.hasNext()){
-//
-//        }
 
 
         int complement = 0;
