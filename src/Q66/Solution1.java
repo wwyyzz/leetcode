@@ -4,22 +4,6 @@ import java.util.Arrays;
 
 public class Solution1 {
 
-    public static void main(String[] args) {
-//        int[] nums = {9};
-//        int[] nums = {1, 2, 3};
-//        int[] nums = {1,9 , 9, 9};
-        int MIN_ARRAY_SORT_GRAN = 1 << 13;
-        System.out.println("MIN = "+ MIN_ARRAY_SORT_GRAN);
-
-        int[] nums = {9,9 , 9, 9};
-
-        int[] result = new s1().plusOne(nums );
-
-        System.out.println(Arrays.toString(result));
-
-    }
-
-
 }
 
 class s1{
