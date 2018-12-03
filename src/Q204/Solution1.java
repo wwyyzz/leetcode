@@ -23,6 +23,7 @@ public class Solution1 {
                 result++;
             }
         }
+        System.out.println(result);
         return result;
     }
 
@@ -35,3 +36,57 @@ public class Solution1 {
         return true;
     }
 }
+
+class Solution2 {
+    public int countPrimes(int n) {
+        if (n == 0 || n == 1 || n == 2){
+            return 0;
+        }
+
+        int result = 1;
+        for (int i = 3; i < n; i=i+2) {
+            if (isPrime(i)){
+                result++;
+            }
+        }
+        System.out.println(result);
+        return result;
+    }
+
+    private boolean isPrime(int num){
+//        if (n <= 1) return false;
+        if (num % 5 == 0 && num != 5) return false;
+        for (int i = 2; i < num ; i++) {
+            if ( num % i == 0) return false;
+        }
+        return true;
+    }
+}
+
+
+class Solution3 {
+    public int countPrimes(int n) {
+        if (n == 0 || n == 1 || n == 2){
+            return 0;
+        }
+
+        int result = 1;
+        for (int i = 3; i < n; i=i+2) {
+            if (isPrime(i)){
+                result++;
+            }
+        }
+        System.out.println(result);
+        return result;
+    }
+
+    private boolean isPrime(int num){
+//        if (n <= 1) return false;
+        if (num % 5 == 0 && num != 5) return false;
+        for (int i = 2; i < num /2; i++) {
+            if ( num % i == 0) return false;
+        }
+        return true;
+    }
+}
+
