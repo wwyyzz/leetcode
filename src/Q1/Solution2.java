@@ -32,6 +32,7 @@ class s2 {
 
 
         int complement = 0;
+
         for (int i = 0; i < nums.length; i++) {
             complement = target - nums[i];
             if (nums_map.containsKey(complement) && nums_map.get(complement)!= i){
