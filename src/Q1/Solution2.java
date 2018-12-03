@@ -9,7 +9,7 @@ public class Solution2 {
     public static void main(String[] args) {
         int[] nums = {2, 7, 9, 17};
 
-        int target = 9;
+        int target = 19;
         int[] result = new s2().twoSum(nums, target );
 
         for (Integer i:result
