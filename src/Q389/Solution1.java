@@ -48,16 +48,16 @@ public class Solution1 {
     }
 }
 
-class Solution2 {
-    public char findTheDifference(String s, String t) {
-        char[] arr1 = s.toCharArray();
-        char[] arr2 = t.toCharArray();
-
-        for (char c:arr2
-             ) {
-            
-        }
-        Arrays.sort(arr1);
-
-    }
-}
+//class Solution2 {
+//    public char findTheDifference(String s, String t) {
+//        char[] arr1 = s.toCharArray();
+//        char[] arr2 = t.toCharArray();
+//
+//        for (char c:arr2
+//             ) {
+//
+//        }
+//        Arrays.sort(arr1);
+//
+//    }
+//}
