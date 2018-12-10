@@ -30,7 +30,6 @@ package Q551;
 public class Solution1 {
     public boolean checkRecord(String s) {
 //        查找String中A的数量< = 1     条件1
-        s.indexOf()
         int absentCount = 0;
         for (char c:s.toCharArray()
              ) {

@@ -24,9 +24,6 @@
 package Q7;
 
 public class Solution1 {
-}
-
-class s1{
     public int reverse(int x) {
         int result = 0;
         String s = "" + x;
@@ -35,8 +32,8 @@ class s1{
 
         System.out.println(sb.charAt(sb.length() - 1));
 
-        if (sb.charAt(sb.length() - 1) == '-'){
-            sb.deleteCharAt(sb.length()-1);
+        if (sb.charAt(sb.length() - 1) == '-') {
+            sb.deleteCharAt(sb.length() - 1);
             System.out.println(sb);
             try {
                 result = -Integer.parseInt(sb.toString());
@@ -44,7 +41,7 @@ class s1{
                 e.printStackTrace();
                 return 0;
             }
-        }else {
+        } else {
             try {
                 result = -Integer.parseInt(sb.toString());
             } catch (NumberFormatException e) {
@@ -54,4 +51,40 @@ class s1{
         }
         return 0;
     }
+}
+
+/**
+ * 1032 / 1032 个通过测试用例
+ * 状态：通过
+ * 执行用时：27 ms
+ *
+ * 已经战胜 91.33 % 的 java 提交记录
+ */
+class Solution2{
+    public int reverse(int x) {
+
+        StringBuilder s = new StringBuilder("" + x);
+
+//        如果 > 0 则转成字符串，然后反转，再转成int返回
+        if ( x >= 0 ){
+        s.reverse();
+            try {
+                return Integer.valueOf(s.toString());
+            } catch (NumberFormatException e) {
+                return 0;
+            }
+//        如果 < 0 ,删除负号,转成字符串，执行然后反转，再转成int，在转成负数返回
+        }else {
+            s.delete(0,1);
+//            System.out.println(s);
+            s.reverse();
+            try {
+                return -Integer.valueOf(s.toString());
+            } catch (NumberFormatException e) {
+                return 0;
+            }
+        }
+    }
+
+
 }
