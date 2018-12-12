@@ -7,6 +7,7 @@ package Q537;
  * @create: 2018-12-10 15:41
  */
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -40,7 +41,6 @@ import java.util.Arrays;
 public class Solution1 {
     public String complexNumberMultiply(String a, String b) {
 //        分别提取String a和b的实部和虚部，转为int保存在数组中arr_a arr_b
-
         int[] numA = getParts(a);
         int[] numB = getParts(b);
 
