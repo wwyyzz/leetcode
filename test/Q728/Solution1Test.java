@@ -28,5 +28,6 @@ public class Solution1Test {
 
         assertEquals(result1, new Solution1().selfDividingNumbers(1,22));
 
+
     }
 }
