@@ -9,8 +9,6 @@ import static org.junit.Assert.*;
 
 public class Solution1Test {
 
-
-
     @Test
     public void selfDividingNumbers() {
         ArrayList<Integer> result1 = new ArrayList<>();
