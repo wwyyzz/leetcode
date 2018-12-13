@@ -14,5 +14,7 @@ public class Solution1Test {
         assertEquals(5, new Solution1().lengthOfLastWord("Hello"));
         assertEquals(0, new Solution1().lengthOfLastWord("a "));
         assertEquals(0, new Solution1().lengthOfLastWord(" "));
+        assertEquals(0, new Solution1().lengthOfLastWord(" "));
+        assertEquals(0, new Solution1().lengthOfLastWord("    "));
     }
 }
