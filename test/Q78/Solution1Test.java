@@ -23,6 +23,5 @@ public class Solution1Test {
         result.add(Arrays.asList(2,3));
         result.add(Arrays.asList(1,2,3));
 
-        assertEquals();
     }
 }

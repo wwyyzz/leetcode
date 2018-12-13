@@ -12,9 +12,9 @@ import java.util.List;
 
 
 public class Solution1 {
-    public List<List<Integer>> subsets(int[] nums) {
-        List<List<Integer>> result = new ArrayList<List<Integer>>();
-
-
-    }
+//    public List<List<Integer>> subsets(int[] nums) {
+//        List<List<Integer>> result = new ArrayList<List<Integer>>();
+//
+//
+//    }
 }
