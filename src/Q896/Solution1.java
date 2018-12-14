@@ -47,7 +47,6 @@ public class Solution1 {
 //          如果（A[i] 始终>= A[i+1]）则true
         for (int i = 0; i < A.length; i++) {
 //            if (A[i] >= A[i+])
-
             
         }
 //        遍历数组
