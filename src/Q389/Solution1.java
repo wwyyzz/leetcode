@@ -96,6 +96,9 @@ class Solution3 {
                 ) {
             sum -= c;
         }
+        
         return (char)sum;
+
+
     }
 }

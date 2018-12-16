@@ -51,6 +51,6 @@ public class Solution1 {
         }
 //        遍历数组
 //          如果（A[i] 始终<= A[i+1]）则true
-
+        return true;
     }
 }
