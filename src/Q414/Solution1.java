@@ -23,6 +23,7 @@ package Q414;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class Solution1 {
     public int thirdMax(int[] nums) {
@@ -52,7 +53,7 @@ public class Solution1 {
             int num = nums[i];
             set.add(num);
         }
-
+        System.out.println(set);
         if (set.size() < 3){
             return result;
         }else {
@@ -69,31 +70,30 @@ public class Solution1 {
  *
  26 / 26 个通过测试用例
  状态：通过
- 执行用时：15 ms
- 已经战胜 21.83 % 的 java 提交记录
+ 执行用时：10 ms
+ 已经战胜 30.76 % 的 java 提交记录
  */
 class Solution2 {
     public int thirdMax(int[] nums) {
 //        将nums排序
         Arrays.sort(nums);
-//        result = 最大的那个
-        int result = nums[nums.length - 1];
 
 //        将nums转为set
-        Set<Integer> set = new HashSet();
-        for (int i = 0; i < nums.length; i++) {
+        TreeSet<Integer> set = new TreeSet<>();
+        for (int i = nums.length - 1; i >= 0 ; i--) {
             int num = nums[i];
-            set.add(num);
+            if (set.size() >= 3){
+                break;
+            } else {
+                set.add(num);
+            }
         }
+        System.out.println(set);
 //        如果 set.size < 3 ,返回最大的
 //        否则，将set转为array，返回倒数第三个
-        if (set.size() < 3){
-            return result;
-        }else {
-            Object[] arr = set.toArray();
-            Arrays.sort(arr);
-            return (int)arr[arr.length - 3];
-        }
+
+        return (set.size() < 3)?(nums[nums.length - 1]):(set.first());
+
 
 
     }
