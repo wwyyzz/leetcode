@@ -28,5 +28,6 @@ public class Solution1Test {
         assertEquals(true, new Solution2().judgeSquareSum(500));
         assertEquals(true, new Solution2().judgeSquareSum(17113));
         assertEquals(false, new Solution2().judgeSquareSum(2147482647));
+        assertEquals(false, new Solution2().judgeSquareSum(2147483646));
     }
 }

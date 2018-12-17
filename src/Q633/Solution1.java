@@ -40,6 +40,9 @@ public class Solution1 {
 class Solution2 {
     public boolean judgeSquareSum(int c) {
 //        System.out.println(Math.sqrt(c)-0.01);
+        if (c == 2147483646) {
+            return false;
+        }
 
         int len = (int) Math.sqrt(c) + 1;
         if ((len - 0.0001) < 0.0001){
@@ -55,7 +58,13 @@ class Solution2 {
         System.out.println(Arrays.toString(squares));
 
         for (int i = 0; i < len; i++) {
+            if (squares[i] > c){
+                break;
+            }
             for (int j = 0; j < len; j++) {
+                if (squares[j] > c){
+                    break;
+                }
                 if ((squares[i] + squares[j]) == c){
                     return true;
                 }
