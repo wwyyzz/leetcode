@@ -46,6 +46,15 @@ public class listDemo {
 
         System.out.println(Arrays.toString(l1.toArray()));
 
+        System.out.println("-------------------------------------" );
+        //        遍历元素
+        for (int i = 0; i < l1.size(); i++) {
+            Integer integer =  l1.get(i);
+            l1.set(i, integer * 2);
+        }
+        display(l1);
+
+
     }
 
     private static void display(List<Integer> list ){
