@@ -2,6 +2,7 @@ package Demo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class arrayDemo {
@@ -108,6 +109,8 @@ public class arrayDemo {
             Object o =  l1.get(i);
             
         }
+
+
 
         
 
