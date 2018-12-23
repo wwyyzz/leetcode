@@ -70,6 +70,7 @@ public class listDemo {
         l2.add("Bob");
         l2.add("Carl");
 
+
         Iterator iter2 = l2.iterator();
         System.out.println(iter2.next());
         System.out.println(iter2.next());

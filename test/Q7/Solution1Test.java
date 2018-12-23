@@ -6,7 +6,8 @@ import static org.junit.Assert.*;
 
 public class Solution1Test {
 
-    @Test
+
+    @Test(timeout = 100)
     public void reverse() {
         assertEquals(321, new Solution2().reverse(123));
         assertEquals(-321, new Solution2().reverse(-123));

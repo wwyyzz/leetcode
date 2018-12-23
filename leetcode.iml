@@ -8,13 +8,16 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/SourceCode/junit4-r4.12.zip!/junit4-r4.12/src/main/java" />
+          <root url="jar://$USER_HOME$/SourceCode/junit4-r4.12.zip!/junit4-r4.12/src/test/java" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
