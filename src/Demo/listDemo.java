@@ -2,6 +2,7 @@ package Demo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class listDemo {
@@ -45,6 +46,37 @@ public class listDemo {
 
 
         System.out.println(Arrays.toString(l1.toArray()));
+
+        System.out.println("-------------------------------------" );
+        //        遍历元素
+        for (int i = 0; i < l1.size(); i++) {
+            Integer integer =  l1.get(i);
+            l1.set(i, integer * 2);
+        }
+        display(l1);
+
+        for (Integer integer : l1) {
+            System.out.println("list1 = " + integer);
+        }
+
+        Iterator<Integer> iter = l1.iterator();
+
+        while (iter.hasNext()){
+            System.out.println("list1 = " + iter.next());
+        }
+
+        List<String> l2 = new ArrayList<>();
+        l2.add("Amy");
+        l2.add("Bob");
+        l2.add("Carl");
+
+
+        Iterator iter2 = l2.iterator();
+        System.out.println(iter2.next());
+        System.out.println(iter2.next());
+        iter2.remove();
+
+        System.out.println(l2);
 
     }
 
