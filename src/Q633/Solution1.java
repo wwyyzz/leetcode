@@ -15,6 +15,8 @@
 package Q633;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Solution1 {
     public boolean judgeSquareSum(int c) {
@@ -40,9 +42,7 @@ public class Solution1 {
 class Solution2 {
     public boolean judgeSquareSum(int c) {
 //        System.out.println(Math.sqrt(c)-0.01);
-        if (c == 2147483646) {
-            return false;
-        }
+
 
         int len = (int) Math.sqrt(c) + 1;
         if ((len - 0.0001) < 0.0001){
@@ -51,11 +51,12 @@ class Solution2 {
 
         int[] squares = new int[len];
 
-        for (int i = 0; i < len; i++) {
+        for (int i = 1; i < len; i++) {
             squares[i] = i * i;
         }
 
         System.out.println(Arrays.toString(squares));
+        System.out.println("size = "+ squares.length);
 
         for (int i = 0; i < len; i++) {
             if (squares[i] > c){
@@ -72,5 +73,62 @@ class Solution2 {
         }
 
         return false;
+    }
+}
+
+/**
+ *
+ 124 / 124 个通过测试用例
+ 状态：通过
+ 执行用时：138 ms
+ 我的提交执行用时
+ 已经战胜 1.58 % 的 java 提交记录
+ */
+class Solution3 {
+    public boolean judgeSquareSum(int c) {
+
+        int len = (int) Math.sqrt(c);
+//        if ((len - 0.0001) < 0.0001){
+//            return true;
+//        }
+        // System.out.println("len = " + len);
+        Set<Integer> squares = new HashSet<>();
+
+        for (int i = 0; i <= len; i++) {
+            squares.add( i * i);
+            if (squares.contains( c - i * i)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
+
+
+/**
+ * 执行用时：13 ms
+ * 已经战胜 76.84 % 的 java 提交记录
+ */
+class Solution4 {
+    public boolean judgeSquareSum(int c) {
+
+    int i = 0;
+    int j = (int)Math.sqrt(c);
+
+    while (i <=j){
+        int num = i * i + j * j;
+        if (num == c) {
+            return true;
+        }
+        else if (num < c){
+            i++;
+        }else {
+            j--;
+        }
+
+    }
+
+    return false;
     }
 }

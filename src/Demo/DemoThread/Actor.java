@@ -11,6 +11,7 @@ public class Actor extends Thread{
     @Override
     public void run() {
         System.out.println(getName() + " I am a actor!");
+        System.out.println(Thread.currentThread().getState());
         int count = 0;
         boolean keepRunning = true;
         while (keepRunning) {
@@ -39,7 +40,7 @@ public class Actor extends Thread{
     public static void main(String[] args) {
         Thread actor = new Actor();
         actor.setName("Mr.Thread");
-
+        actor.setPriority(Thread.NORM_PRIORITY + 3);
         actor.start();
 
         Thread actress = new Thread(new Actress(), "Ms. Runnable");
@@ -52,12 +53,13 @@ class Actress implements Runnable{
     @Override
     public void run() {
         System.out.println(Thread.currentThread().getName() + " I am a actor!");
+        System.out.println(Thread.currentThread().getState());
         int count = 0;
         boolean keepRunning = true;
-        while (keepRunning) {
+        while (keepRunning && count <500) {
             System.out.println(Thread.currentThread().getName() + " play " + (++count) + " times.");
             try {
-                Thread.sleep(1000);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
