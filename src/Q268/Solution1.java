@@ -37,10 +37,13 @@ public class Solution1 {
         System.out.println(sum);
 //        遍历数组
 //                从sum中逐个减去元素
-        for (int i = 0; i < nums.length; i++) {
-            int num = nums[i];
-            sum -= num;
-            
+//        for (int i = 0; i < nums.length; i++) {
+//            int num = nums[i];
+//            sum -= num;
+//
+//        }
+        for(int i : nums){
+            sum -= i;
         }
 
 //        返回sum的值
