@@ -8,7 +8,7 @@ public class Solution1Test {
 
     @Test
     public void checkRecord() {
-        assertEquals(true, new Solution1().checkRecord("PPALLP"));
-        assertEquals(false, new Solution1().checkRecord("PPALLL"));
+        assertTrue(new Solution1().checkRecord("PPALLP"));
+        assertFalse(new Solution1().checkRecord("PPALLL"));
     }
 }

@@ -12,13 +12,13 @@ public class Solution2Test {
     @Test
     public void isPowerOfFour() {
 
-        assertEquals(true,new Solution2().isPowerOfFour(1024));
-        assertEquals(false,new Solution2().isPowerOfFour(1025));
-        assertEquals(true,new Solution2().isPowerOfFour(16));
-        assertEquals(false,new Solution2().isPowerOfFour(17));
-        assertEquals(false,new Solution2().isPowerOfFour(100));
-        assertEquals(true,new Solution2().isPowerOfFour(256));
-        assertEquals(false,new Solution2().isPowerOfFour(2048));
-        assertEquals(false,new Solution2().isPowerOfFour(0));
+        assertTrue(new Solution2().isPowerOfFour(1024));
+        assertFalse(new Solution2().isPowerOfFour(1025));
+        assertTrue(new Solution2().isPowerOfFour(16));
+        assertFalse(new Solution2().isPowerOfFour(17));
+        assertFalse(new Solution2().isPowerOfFour(100));
+        assertTrue(new Solution2().isPowerOfFour(256));
+        assertFalse(new Solution2().isPowerOfFour(2048));
+        assertFalse(new Solution2().isPowerOfFour(0));
     }
 }

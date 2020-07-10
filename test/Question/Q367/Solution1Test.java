@@ -8,10 +8,10 @@ public class Solution1Test {
 
     @Test
     public void isPerfectSquare() {
-        assertEquals(true, new Solution1().isPerfectSquare(16));
-        assertEquals(false, new Solution1().isPerfectSquare(14));
-        assertEquals(false, new Solution1().isPerfectSquare(2147483647));
-        assertEquals(true, new Solution1().isPerfectSquare(
+        assertTrue(new Solution1().isPerfectSquare(16));
+        assertFalse(new Solution1().isPerfectSquare(14));
+        assertFalse(new Solution1().isPerfectSquare(2147483647));
+        assertTrue(new Solution1().isPerfectSquare(
                 2147395600));
     }
 }

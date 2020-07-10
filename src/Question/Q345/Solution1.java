@@ -56,8 +56,7 @@ public class Solution1 {
         }
 
         System.out.println(sToArray);
-        String result = new String(sToArray);
-        return result;
+        return new String(sToArray);
 
     }
 

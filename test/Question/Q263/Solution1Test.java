@@ -8,8 +8,8 @@ public class Solution1Test {
 
     @Test
     public void isUgly() {
-        assertEquals(true, new Solution1().isUgly(6));
-        assertEquals(true, new Solution1().isUgly(8));
-        assertEquals(false, new Solution1().isUgly(14));
+        assertTrue(new Solution1().isUgly(6));
+        assertTrue(new Solution1().isUgly(8));
+        assertFalse(new Solution1().isUgly(14));
     }
 }

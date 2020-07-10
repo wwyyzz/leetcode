@@ -40,8 +40,7 @@ class s2 {
     public String reverseString(String s) {
 
         StringBuilder sb = new StringBuilder(s);
-        String result = new String(sb.reverse());
 
-        return result;
+        return new String(sb.reverse());
     }
 }

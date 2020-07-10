@@ -8,9 +8,9 @@ public class Solution1Test {
 
     @Test
     public void detectCapitalUse() {
-        assertEquals(true, new Solution1().detectCapitalUse("USA"));
-        assertEquals(false, new Solution1().detectCapitalUse("FlaG"));
-        assertEquals(true, new Solution1().detectCapitalUse("Google"));
-        assertEquals(true, new Solution1().detectCapitalUse("leetcode"));
+        assertTrue(new Solution1().detectCapitalUse("USA"));
+        assertFalse(new Solution1().detectCapitalUse("FlaG"));
+        assertTrue(new Solution1().detectCapitalUse("Google"));
+        assertTrue(new Solution1().detectCapitalUse("leetcode"));
     }
 }

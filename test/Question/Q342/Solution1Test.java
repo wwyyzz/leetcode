@@ -10,14 +10,14 @@ public class Solution1Test {
 
     @Test
     public void isPowerOfFour() {
-        assertEquals(true,new Solution1().isPowerOfFour(1024));
-        assertEquals(false,new Solution1().isPowerOfFour(1025));
-        assertEquals(true,new Solution1().isPowerOfFour(16));
-        assertEquals(false,new Solution1().isPowerOfFour(17));
-        assertEquals(false,new Solution1().isPowerOfFour(100));
-        assertEquals(true,new Solution1().isPowerOfFour(256));
-        assertEquals(false,new Solution1().isPowerOfFour(2048));
-        assertEquals(false,new Solution1().isPowerOfFour(0));
+        assertTrue(new Solution1().isPowerOfFour(1024));
+        assertFalse(new Solution1().isPowerOfFour(1025));
+        assertTrue(new Solution1().isPowerOfFour(16));
+        assertFalse(new Solution1().isPowerOfFour(17));
+        assertFalse(new Solution1().isPowerOfFour(100));
+        assertTrue(new Solution1().isPowerOfFour(256));
+        assertFalse(new Solution1().isPowerOfFour(2048));
+        assertFalse(new Solution1().isPowerOfFour(0));
 
     }
 }

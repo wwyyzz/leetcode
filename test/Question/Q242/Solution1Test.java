@@ -13,10 +13,10 @@ public class Solution1Test {
 //        assertEquals(false, new Solution1().isAnagram("aa","a"));
 //        assertEquals(false, new Solution1().isAnagram("aa","a"));
 
-        assertEquals(true, new Solution2().isAnagram("anagram","nagaram"));
-        assertEquals(false, new Solution2().isAnagram("rat","car"));
-        assertEquals(false, new Solution2().isAnagram("aa","a"));
-        assertEquals(false, new Solution2().isAnagram("aa","a"));
+        assertTrue(new Solution2().isAnagram("anagram", "nagaram"));
+        assertFalse(new Solution2().isAnagram("rat", "car"));
+        assertFalse(new Solution2().isAnagram("aa", "a"));
+        assertFalse(new Solution2().isAnagram("aa", "a"));
 
     }
 }
