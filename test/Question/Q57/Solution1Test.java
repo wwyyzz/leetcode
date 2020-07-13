@@ -13,6 +13,7 @@ public class Solution1Test {
     int[] result2 = {10,30};
     int[] nums2 = {10,26,30,31,47,60};
 
+
     @Test
     public void twoSum() {
         assertArrayEquals(result1, new Solution1().twoSum(nums1,9));

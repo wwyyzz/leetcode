@@ -14,6 +14,22 @@ public class Solution1 {
     }
 }
 
+
+/**
+ * 执行结果：
+ * 通过
+ * 显示详情
+ * 执行用时：
+ * 20 ms
+ * , 在所有 Java 提交中击败了
+ * 7.76%
+ * 的用户
+ * 内存消耗：
+ * 40.8 MB
+ * , 在所有 Java 提交中击败了
+ * 12.29%
+ * 的用户
+ */
 class s1 {
     public int removeDuplicates(int[] nums) {
         Set<Integer> set = new TreeSet<>();

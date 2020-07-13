@@ -22,7 +22,9 @@ package Question.Q57;
 import java.util.Arrays;
 
 /**
- *
+ *执行结果：
+ * 超出时间限制
+ * 显示详情
 
  */
 public class Solution1 {
@@ -49,9 +51,6 @@ public class Solution1 {
                 }
             }
         }
-
-
-
 
         return result;
     }
