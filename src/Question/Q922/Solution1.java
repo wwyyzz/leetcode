@@ -55,9 +55,6 @@ public class Solution1 {
             A[i * 2 + 1] = oddList.get(i);
         }
 
-
-
-
         return A;
     }
 }

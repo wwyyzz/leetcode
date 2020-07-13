@@ -30,6 +30,12 @@ package Question.Q1480;
 
 import java.util.Arrays;
 
+/**
+ * 53 / 53 个通过测试用例
+ * 状态：通过
+ * 执行用时：2 ms
+ * 内存消耗：40.1 MB
+ */
 public class Solution1 {
     public int[] runningSum(int[] nums) {
         int[] result = new int[nums.length] ;
