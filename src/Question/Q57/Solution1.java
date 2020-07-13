@@ -19,6 +19,8 @@
  */
 package Question.Q57;
 
+import java.util.Arrays;
+
 /**
  *
 
@@ -27,7 +29,7 @@ public class Solution1 {
     public int[] twoSum(int[] nums, int target){
         int[] result = {0,0};
 
-        System.out.println(result);
+        System.out.println(Arrays.toString(result));
 
 //        1、for 外层遍历
 //        如果 > target 则退出

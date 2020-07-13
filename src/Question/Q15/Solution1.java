@@ -26,10 +26,10 @@ public class Solution1 {
 //        a.add(Arrays.asList(new Integer[]{1,2,3}));
         for (int i = 0; i < nums.length - 2; i++) {
             for (int j = i + 1; j < nums.length - 1; j++) {
-                for (int k = 0; k < nums.length; k++) {
-                    if (nums[i] + nums[j] + nums[k] == 0){
-                        System.out.println("nums[i,j,k] =" + nums[i] + nums[j] + nums[k]);
-                        a.add(Arrays.asList(new Integer[]{nums[i], nums[j],nums[k]}));
+                for (int num : nums) {
+                    if (nums[i] + nums[j] + num == 0) {
+                        System.out.println("nums[i,j,k] =" + nums[i] + nums[j] + num);
+                        a.add(Arrays.asList(new Integer[]{nums[i], nums[j], num}));
                     }
 
                 }

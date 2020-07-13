@@ -75,14 +75,14 @@ public class Solution1 {
             result.append(sb);
         }
 
-//        处理后将单词合并为字符串返回
+    // 处理后将单词合并为字符串返回
 
         System.out.println(result);
         return result.toString();
 
     }
 
-    //        判断首字母是否是元音
+    // 判断首字母是否是元音
     private boolean isVowel(char c){
         return  (c=='a') ||
                 (c=='e') ||

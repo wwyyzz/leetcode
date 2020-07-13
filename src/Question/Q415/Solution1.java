@@ -26,7 +26,7 @@ public class Solution1 {
         System.out.println((char)(48));
         System.out.println(arr22);
 
-        System.arraycopy(arr2, 0, arr22, len_a - len_b + 0, len_b);
+        System.arraycopy(arr2, 0, arr22, len_a - len_b, len_b);
 
         System.out.println(arr1);
         System.out.println(arr22);

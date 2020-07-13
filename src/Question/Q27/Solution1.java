@@ -98,7 +98,7 @@ public class Solution1 {
  */
 class Solution2 {
     public int removeElement(int[] nums, int val) {
-        System.out.println(nums.toString());
+        System.out.println(Arrays.toString(nums));
         int result = 0;
         int[] remove = new int[nums.length];
 
@@ -114,7 +114,7 @@ class Solution2 {
 //            nums[i] = remove[i];
 //        }
         System.out.println(Arrays.toString(nums));
-        System.out.println(nums.toString());
+        System.out.println(Arrays.toString(nums));
         return result;
     }
 }
