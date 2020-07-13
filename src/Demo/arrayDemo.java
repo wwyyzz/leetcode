@@ -107,9 +107,6 @@ public class arrayDemo {
             Object o =  l1.get(i);
             
         }
-
-
-
         
 
     }
