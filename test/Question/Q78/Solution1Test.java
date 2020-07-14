@@ -11,7 +11,7 @@ public class Solution1Test {
     @Test
     public void subsets() {
 
-        List<List<Integer>> result = new ArrayList<List<Integer>>();
+        List<List<Integer>> result = new ArrayList<>();
         result.add(Arrays.asList());
         result.add(Arrays.asList(1));
         result.add(Arrays.asList(2));

@@ -41,7 +41,7 @@ public class Solution1 {
 //        while（count < n ）
         while (sb.length() < n){
             //        从1开始到递增，将数转为String添加到StringBuilder中
-            sb.append(Integer.toString(num));
+            sb.append(num);
             num++;
         }
 //        从1开始到递增，将数转为String添加到StringBuilder中
