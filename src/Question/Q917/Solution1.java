@@ -48,12 +48,6 @@ public class Solution1 {
     }
 
     private boolean isLetter(char c){
-//        if ((c >= 65 && c <= 90) || (c >= 96 && c<= 122) ) {
-//            return true;
-//        }
-//        else {
-//            return false;
-//        }
 
         return ((c >= 65 && c <= 90) || (c >= 96 && c<= 122) ) ? true:false;
     }
