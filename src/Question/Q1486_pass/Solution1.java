@@ -36,13 +36,16 @@
  n == nums.length
  */
 
-package Question.Q1486;
+package Question.Q1486_pass;
 
 
 import java.util.Arrays;
 
 /**
-
+ 54 / 54 个通过测试用例
+ 状态：通过
+ 执行用时：0 ms
+ 内存消耗：36.6 MB
  */
 public class Solution1 {
     public int xorOperation(int n, int start){

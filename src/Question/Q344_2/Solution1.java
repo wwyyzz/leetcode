@@ -23,6 +23,10 @@ import java.util.Arrays;
 
 /**
 
+ 478 / 478 个通过测试用例
+ 状态：通过
+ 执行用时：1 ms
+ 内存消耗：46.4 MB
  */
 public class Solution1 {
     public void reverseString(char[] s) {

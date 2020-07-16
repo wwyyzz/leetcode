@@ -18,7 +18,10 @@ package Question.Q541;
 
 
 /**
-
+ 60 / 60 个通过测试用例
+ 状态：通过
+ 执行用时：1 ms
+ 内存消耗：39.6 MB
  */
 public class Solution1 {
     public String reverseStr(String s, int k) {

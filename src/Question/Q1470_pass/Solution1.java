@@ -26,7 +26,7 @@
  1 <= nums[i] <= 10^3
  */
 
-package Question.Q1470;
+package Question.Q1470_pass;
 
 
 import java.util.Arrays;

@@ -26,7 +26,7 @@
  * -10^6 <= nums[i] <= 10^6
  */
 
-package Question.Q1480;
+package Question.Q1480_pass;
 
 import java.util.Arrays;
 

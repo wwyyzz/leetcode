@@ -15,7 +15,7 @@
  * A.length % 2 == 0
  * 0 <= A[i] <= 1000
  */
-package Question.Q922;
+package Question.Q922_pass;
 
 import java.util.ArrayList;
 

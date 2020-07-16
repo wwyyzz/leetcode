@@ -29,7 +29,7 @@
  1 <= nums[i] <= 100
  */
 
-package Question.Q1512;
+package Question.Q1512_pass;
 
 
 /**
