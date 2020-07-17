@@ -1,4 +1,4 @@
-package Question.Q832;
+package Question.Q832_pass;
 
 /**
  * @program: leetcode

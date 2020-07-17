@@ -1,4 +1,4 @@
-package contest.Q5177;
+package Contest.Q5177;
 
 import java.util.Arrays;
 import java.util.HashMap;

@@ -16,7 +16,7 @@
  *
  * S 和 J 最多含有50个字母。 J 中的字符不重复。
  */
-package Question.Q771;
+package Question.Q771_pass;
 
 /**
  * 254 / 254 个通过测试用例

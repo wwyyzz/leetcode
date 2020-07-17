@@ -1,4 +1,4 @@
-package contest.Q5446;
+package Contest.Q5446;
 
 import org.junit.Test;
 
