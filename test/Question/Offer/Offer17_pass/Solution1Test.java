@@ -1,8 +1,7 @@
-package Question.Offer.Offer17;
+package Question.Offer.Offer17_pass;
 
 import org.junit.Test;
 
-import static Question.Offer.Offer17.Solution1.*;
 import static org.junit.Assert.*;
 
 public class Solution1Test {

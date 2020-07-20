@@ -1,4 +1,4 @@
-package Question.Offer.Offer17;
+package Question.Offer.Offer17_pass;
 
 import java.util.Arrays;
 

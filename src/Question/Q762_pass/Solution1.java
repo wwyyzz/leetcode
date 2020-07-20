@@ -29,7 +29,7 @@
  * L, R 是 L <= R 且在 [1, 10^6] 中的整数。
  * R - L 的最大值为 10000。
  */
-package Question.Q762;
+package Question.Q762_pass;
 
 import java.util.Arrays;
 import java.util.List;
