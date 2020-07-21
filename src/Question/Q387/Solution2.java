@@ -21,7 +21,7 @@
 
 package Question.Q387;
 
-public class Soulution1 {
+public class Solution2 {
     public int firstUniqChar(String s) {
         char[] c = s.toCharArray();
         for (int i = 0; i < c.length  ; i++) {
