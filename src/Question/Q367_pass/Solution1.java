@@ -12,7 +12,7 @@
  * 输入：14
  * 输出：False
  */
-package Question.Q367;
+package Question.Q367_pass;
 
 /**
  *68 / 68 个通过测试用例

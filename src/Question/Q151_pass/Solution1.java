@@ -30,12 +30,16 @@
  请选用 C 语言的用户尝试使用 O(1) 额外空间复杂度的原地解法。
  */
 
-package Question.Q151;
+package Question.Q151_pass;
 
 import java.util.Arrays;
 
 /**
 
+ 25 / 25 个通过测试用例
+ 状态：通过
+ 执行用时：6 ms
+ 内存消耗：40 MB
  */
 public class Solution1 {
     public String reverseWords(String s){
