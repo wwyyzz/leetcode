@@ -1,41 +1,27 @@
 package Question.Q217;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
 public class Solution1 {
-    public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 4};
+    public boolean containsDuplicate(int[] nums){
 
-        boolean result = new s1().containsDuplicate(nums);
+        Set set = new HashSet();
 
-        System.out.println("result =" + result);
-
-    }
-}
-
-class s1 {
-    public boolean containsDuplicate(int[] nums) {
-        Set<Integer> set = new HashSet<>();
-        for ( Integer i: nums){
-            if (set.contains(i)){
-                return true;
-            }
-            set.add(i);
+        for (int num : nums) {
+            set.add(num);
         }
 
-//        return (nums.length == set.size())?(false):(true);
-        return false;
+        System.out.println(set.toString());
+        System.out.println(nums.length != set.size());
+        return nums.length != set.size();
+
+//        System.out.println("result =" + result);
+
     }
 }
 
-//class s2 {
-//    public boolean containsDuplicate(int[] nums) {
-//        Map<Integer, Integer> map = new HashMap<>();
-//        for ( Integer i: nums){
-//            map.put(i,)
-//        }
-//
-//        return (nums.length == set.size())?(false):(true);
-//    }
-//}
+
+
+

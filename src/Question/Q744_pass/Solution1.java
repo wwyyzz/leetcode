@@ -43,7 +43,7 @@
  * letters 仅由小写字母组成，最少包含两个不同的字母。
  * 目标字母target 是一个小写字母。
  */
-package Question.Q744;
+package Question.Q744_pass;
 
 /**
  * 165 / 165 个通过测试用例

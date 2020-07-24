@@ -8,10 +8,22 @@
  * 输入: "Hello, my name is John"
  * 输出: 5
  */
-package Question.Q434;
+package Question.Q434_pass;
 
 import java.util.Arrays;
 
+/**
+ * 执行用时：
+ * 2 ms
+ * , 在所有 Java 提交中击败了
+ * 32.52%
+ * 的用户
+ * 内存消耗：
+ * 37.7 MB
+ * , 在所有 Java 提交中击败了
+ * 14.29%
+ * 的用户
+ */
 public class Solution1 {
     public int countSegments(String s) {
         s = s.trim();
