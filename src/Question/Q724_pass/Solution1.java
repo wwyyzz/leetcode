@@ -23,7 +23,7 @@
  * nums 的长度范围为 [0, 10000]。
  * 任何一个 nums[i] 将会是一个范围在 [-1000, 1000]的整数。
  */
-package Question.Q724;
+package Question.Q724_pass;
 
 /**
  * [-1,-1,-1,0,1,1]测试不通过
