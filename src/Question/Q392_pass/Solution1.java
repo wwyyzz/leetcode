@@ -25,15 +25,8 @@ package Question.Q392_pass;
 
 /**
  执行用时：
- 0 ms
- , 在所有 Java 提交中击败了
- 100.00%
- 的用户
- 内存消耗：
- 37.4 MB
- , 在所有 Java 提交中击败了
- 100.00%
- 的用户
+ 0 ms, 在所有 Java 提交中击败了100.00%的用户
+ 内存消耗：37.4 MB, 在所有 Java 提交中击败了100.00%的用户
  */
 public class Solution1 {
     public boolean isSubsequence(String s, String t){
