@@ -14,14 +14,15 @@
  解释: 13 = 4 + 9.
  */
 
-package Question.Q279;
+package Question.Q279_pass;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
 
 /**
-
+ 执行用时：199 ms, 在所有 Java 提交中击败了13.72%的用户
+ 内存消耗：47.3 MB, 在所有 Java 提交中击败了5.26%的用户
  */
 public class Solution2 {
     public int numSquares(int n){

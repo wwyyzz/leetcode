@@ -14,7 +14,7 @@
  解释: 13 = 4 + 9.
  */
 
-package Question.Q279;
+package Question.Q279_pass;
 
 import java.util.HashSet;
 import java.util.LinkedList;
