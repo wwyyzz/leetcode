@@ -21,12 +21,21 @@
  你设计的页面的长度和宽度必须都是正整数。
  */
 
-package Question.Q492;
+package Question.Q492_pass;
 
 import java.util.Arrays;
 
 /**
-
+ 执行用时：
+ 1 ms
+ , 在所有 Java 提交中击败了
+ 51.45%
+ 的用户
+ 内存消耗：
+ 37.2 MB
+ , 在所有 Java 提交中击败了
+ 14.29%
+ 的用户
  */
 public class Solution1 {
     public int[] constructRectangle(int area){
@@ -36,8 +45,8 @@ public class Solution1 {
 
         for (int i = sqr_of_area; i >= 1; i--) {
             if ( (area % i) == 0){
-                result[0] = i;
-                result[1] = area / i;
+                result[0] = i > area / i ? i : area / i;
+                result[1] = i > area / i ?  area / i : i ;
                 break;
             }
         }

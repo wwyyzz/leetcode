@@ -11,7 +11,7 @@
  * 输入的数组只包含 0 和1。
  * 输入数组的长度是正整数，且不超过 10,000。
  */
-package Question.Q485;
+package Question.Q485_pass;
 
 /**
  * 41 / 41 个通过测试用例

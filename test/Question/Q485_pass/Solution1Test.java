@@ -1,4 +1,4 @@
-package Question.Q485;
+package Question.Q485_pass;
 
 import org.junit.Test;
 

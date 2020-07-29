@@ -23,19 +23,9 @@ package Question.Q66;
 import java.util.Arrays;
 
 /**
- 执行结果：
- 解答错误
- 显示详情
- 输入:
- [9,8,7,6,5,4,3,2,1,0]
- 输出
- [-3,2,1,4,7,4,8,3,6,4,8]
- 预期结果
- [9,8,7,6,5,4,3,2,1,1]
 
- 对于int不溢出的情况下ok。但是int溢出后失败
  */
-public class Solution1 {
+public class Solution2 {
     public int[] plusOne(int[] digits) {
 
         int num = 0;

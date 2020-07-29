@@ -21,4 +21,12 @@ public class Solution1Test {
 
         assertArrayEquals(result, new Solution1().plusOne(nums));
     }
+
+    @Test
+    public void plusOne3() {
+        int[] nums = {9,8,7,6,5,4,3,2,1,0};
+        int[] result =  {9,8,7,6,5,4,3,2,1,1};
+
+        assertArrayEquals(result, new Solution1().plusOne(nums));
+    }
 }
