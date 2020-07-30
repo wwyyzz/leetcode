@@ -29,10 +29,15 @@
  1 <= nums[i] <= 10^5
  */
 
-package Question.Q1295;
+package Question.Q1295_pass;
 
 /**
  将数字转成字符串来判断位数，有点投机取巧了
+
+ 104 / 104 个通过测试用例
+ 状态：通过
+ 执行用时：2 ms
+ 内存消耗：39.6 MB
  */
 public class Solution1 {
     public int findNumbers(int[] nums) {

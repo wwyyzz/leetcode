@@ -1,4 +1,4 @@
-package Question.Q557;
+package Question.Q557_pass;
 
 /**
  * @program: leetcode

@@ -14,19 +14,27 @@
  1 <= arr[i] <= 10^5
  */
 
-package Question.Q1299;
+package Question.Q1299_pass;
 
 import java.util.Arrays;
 
 /**
 
+ 15 / 15 个通过测试用例
+ 状态：通过
+ 执行用时：2 ms
+ 内存消耗：41.3 MB
  */
 public class Solution1 {
     public int[] replaceElements(int[] arr){
         int[] result = new int[arr.length];
 
         int len = arr.length;
+
         result[len - 1] = -1;
+        if (len == 1){
+            return result;
+        }
         result[len - 2] = arr[len - 1];
 
         int max = arr[len - 1];

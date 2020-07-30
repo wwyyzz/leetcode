@@ -1,4 +1,4 @@
-package Question.Q1299;
+package Question.Q1299_pass;
 
 import org.junit.Test;
 
@@ -18,6 +18,14 @@ public class Solution1Test {
     public void replaceElements2() {
         int[] arr = {1,2,3,4,5,6,7,8,9,0,-1,-2,-3};
         int[] result = {9, 9, 9, 9, 9, 9, 9, 9, 0, -1, -2, -3, -1};
+
+        assertArrayEquals(result, new Solution1().replaceElements(arr));
+    }
+
+    @Test
+    public void replaceElements3() {
+        int[] arr = {400};
+        int[] result = {-1};
 
         assertArrayEquals(result, new Solution1().replaceElements(arr));
     }

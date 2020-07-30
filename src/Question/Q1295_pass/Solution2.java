@@ -29,7 +29,7 @@
  1 <= nums[i] <= 10^5
  */
 
-package Question.Q1295;
+package Question.Q1295_pass;
 
 /**
 
