@@ -13,7 +13,7 @@
  * [2,3]
  *
  */
-package Question.Q442_p;
+package Question.Q442_pass;
 
 import java.util.ArrayList;
 import java.util.Arrays;
