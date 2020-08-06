@@ -16,13 +16,21 @@
  A 和 B 长度不超过 100。
  */
 
-package Question.Q796_p;
+package Question.Q796_pass;
 
 /**
 
+ 45 / 45 个通过测试用例
+ 状态：通过
+ 执行用时：1 ms
+ 内存消耗：37.7 MB
  */
 public class Solution1 {
     public boolean rotateString(String A, String B){
+
+        if (A.length()== 0 && B.length()==0){
+            return true;
+        }
         boolean result = false;
 
         StringBuilder sb_A = new StringBuilder(A);

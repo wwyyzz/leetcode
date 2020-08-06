@@ -1,4 +1,4 @@
-package Question.Q796_p;
+package Question.Q796_pass;
 
 import org.junit.Test;
 
@@ -22,5 +22,12 @@ public class Solution1Test {
         assertEquals(false, new Solution1().rotateString(A, B));
     }
 
+    @Test
+    public void rotateString3() {
+        String A = "";
+        String B = "";
+
+        assertEquals(true, new Solution1().rotateString(A, B));
+    }
 
 }

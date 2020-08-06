@@ -22,9 +22,18 @@ package Question.Q14_p;
 
 import java.util.Arrays;
 
+/**
+ * 118 / 118 个通过测试用例
+ * 状态：通过
+ * 执行用时：1 ms
+ * 内存消耗：37.7 MB
+ */
 public class Solution2 {
     public String longestCommonPrefix(String[] strs) {
 
+        if (strs.length ==0) {
+            return "";
+        }
         int[] min_str = {0,strs[0].length()};
 
 //        int str_len = strs[0].length();
