@@ -41,7 +41,6 @@ public class Solution1 {
             if (strs[0].charAt(i) == strs[1].charAt(i) && strs[0].charAt(i) == strs[2].charAt(i)){
                 sb.append(strs[0].charAt(i));
             }
-
         }
 
         System.out.println("sb =" + sb);
