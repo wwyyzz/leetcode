@@ -18,7 +18,7 @@
  * 解释: 注意，要求返回第三大的数，是指第三大且唯一出现的数。
  * 存在两个值为2的数，它们都排第二。
  */
-package Question.Q414_password;
+package Question.Q414_pass;
 
 import java.util.Arrays;
 import java.util.HashSet;

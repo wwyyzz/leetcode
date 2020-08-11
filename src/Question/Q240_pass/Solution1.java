@@ -20,13 +20,21 @@
  给定 target = 20，返回 false。
  */
 
-package Question.Q240_p;
+package Question.Q240_pass;
 
 /**
 
+ 129 / 129 个通过测试用例
+ 状态：通过
+ 执行用时：9 ms
+ 内存消耗：45.4 MB
  */
 public class Solution1 {
     public boolean searchMatrix(int[][] matrix, int target){
+        if (matrix.length == 0 || matrix[0].length == 0) {
+            return false;
+        }
+
         boolean result = false;
         int rows = matrix.length;
         int cols = matrix[0].length;
@@ -34,7 +42,7 @@ public class Solution1 {
 
         for (int i = 0; i < rows ; i++) {
             System.out.println(matrix[i][cols - 1]);
-            if ((matrix[i][cols - 1]) > target){
+            if ((matrix[i][cols - 1]) >= target){
                 for (int j = 0; j < cols; j++) {
                     if (target == matrix[i][j]){
                         result = true;

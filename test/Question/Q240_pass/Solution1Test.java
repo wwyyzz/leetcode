@@ -1,4 +1,4 @@
-package Question.Q240_p;
+package Question.Q240_pass;
 
 import org.junit.Test;
 
@@ -16,7 +16,15 @@ public class Solution1Test {
           {18, 21, 23, 26, 30}
         };
 
-        assertEquals(true, new Solution1().searchMatrix(matrix, 5));
+        assertEquals(true, new Solution1().searchMatrix(matrix, 0));
         assertEquals(false, new Solution1().searchMatrix(matrix, 20));
+    }
+
+    @Test
+    public void searchMatrix2() {
+        int[][] matrix = {};
+
+        assertEquals(false, new Solution1().searchMatrix(matrix, 0));
+//        assertEquals(false, new Solution1().searchMatrix(matrix, 20));
     }
 }

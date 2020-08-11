@@ -18,7 +18,7 @@
  * 所有输入只包含小写字母 a-z 。
  */
 
-package Question.Q14_p;
+package Question.Q14_pass;
 
 import java.util.Arrays;
 

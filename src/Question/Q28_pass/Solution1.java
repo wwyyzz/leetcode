@@ -25,8 +25,15 @@
  * 已经战胜 99.46 % 的 java 提交记录
  */
 
-package Question.Q28_p;
+package Question.Q28_pass;
 
+/**
+ *
+ 77 / 77 个通过测试用例
+ 状态：通过
+ 执行用时：1 ms
+ 内存消耗：40.2 MB
+ */
 public class Solution1 {
     public int strStr(String haystack, String needle) {
         int step = needle.length();

@@ -29,7 +29,7 @@
  输出: true
  */
 
-package Question.Q20_p;
+package Question.Q20_pass;
 
 import java.util.LinkedList;
 
