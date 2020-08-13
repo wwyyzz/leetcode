@@ -1,4 +1,4 @@
-package Question.Q66_p;
+package Question.Q66_pass;
 
 import org.junit.Test;
 
@@ -44,6 +44,14 @@ public class Solution2Test {
     public void plusOne5() {
         int[] nums = {9,9,9, 9, 9};
         int[] result = { 1,0,0,0,0 , 0};
+
+        assertArrayEquals(result, new Solution2().plusOne(nums));
+    }
+
+    @Test
+    public void plusOne6() {
+        int[] nums = {9};
+        int[] result = { 1,0};
 
         assertArrayEquals(result, new Solution2().plusOne(nums));
     }

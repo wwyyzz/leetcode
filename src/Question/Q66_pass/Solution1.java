@@ -18,7 +18,7 @@
  解释: 输入数组表示数字 4321。
  */
 
-package Question.Q66_p;
+package Question.Q66_pass;
 
 import java.util.Arrays;
 

@@ -18,12 +18,15 @@
  解释: 输入数组表示数字 4321。
  */
 
-package Question.Q66_p;
+package Question.Q66_pass;
 
 import java.util.Arrays;
 
 /**
-
+ 109 / 109 个通过测试用例
+ 状态：通过
+ 执行用时：0 ms
+ 内存消耗：38.2 MB
  */
 public class Solution2 {
     public int[] plusOne(int[] digits) {
@@ -44,7 +47,7 @@ public class Solution2 {
             }
         }
 
-        if (digits[0] == 9 && carry == 1) {
+        if (digits[0] == 9 && carry == 1 || digits[0] == 10) {
             int[] result2 = new int[digits.length + 1];
             result2[0] = 1;
             return result2;

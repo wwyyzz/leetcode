@@ -40,7 +40,7 @@
  *     print(nums[i]);
  * }
  */
-package Question.Q27_p;
+package Question.Q27_pass;
 
 import java.util.Arrays;
 
@@ -96,25 +96,3 @@ public class Solution1 {
  *         return copy;
  *     }
  */
-class Solution2 {
-    public int removeElement(int[] nums, int val) {
-        System.out.println(Arrays.toString(nums));
-        int result = 0;
-        int[] remove = new int[nums.length];
-
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != val){
-                remove[result] = nums[i];
-                result++;
-            }
-        }
-        System.out.println(Arrays.toString(remove));
-        nums = Arrays.copyOf(remove, result);
-//        for (int i = 0; i < remove.length; i++) {
-//            nums[i] = remove[i];
-//        }
-        System.out.println(Arrays.toString(nums));
-        System.out.println(Arrays.toString(nums));
-        return result;
-    }
-}
