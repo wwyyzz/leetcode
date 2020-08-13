@@ -1,4 +1,4 @@
-package Question.Q242;
+package Question.Q242_p;
 
 import org.junit.Test;
 

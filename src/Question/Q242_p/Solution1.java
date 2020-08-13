@@ -19,9 +19,8 @@
  *
  * 34 / 34 个通过测试用例
  */
-package Question.Q242;
+package Question.Q242_p;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -67,27 +66,4 @@ public class Solution1 {
     }
 }
 
-class Solution2 {
-    public boolean isAnagram(String s, String t) {
-        if (s.length() != t.length()){
-            return false;
-        }
 
-        char[] arr1 = s.toCharArray();
-        char[] arr2 = t.toCharArray();
-
-        Arrays.sort(arr1);
-        Arrays.sort(arr2);
-
-
-        System.out.println(arr1);
-        System.out.println(arr2);
-
-
-        if (Arrays.toString(arr1).compareTo(Arrays.toString(arr2)) == 0){
-            return true;
-        }else{
-            return false;
-        }
-    }
-}

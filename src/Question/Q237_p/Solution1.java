@@ -23,7 +23,7 @@
  * 给定的节点为非末尾节点并且一定是链表中的一个有效节点。
  * 不要从你的函数中返回任何结果。
  */
-package Question.Q237;
+package Question.Q237_p;
 
 /**
  * Definition for singly-linked list.
@@ -34,11 +34,7 @@ package Question.Q237;
  * }
  */
 
-class ListNode {
-     int val;
-     ListNode next;
-     ListNode(int x) { val = x; }
- }
+
 
 public class Solution1 {
     public void deleteNode(ListNode node) {

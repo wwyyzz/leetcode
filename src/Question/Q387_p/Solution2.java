@@ -19,18 +19,15 @@
  * 执行用时：40 ms
  */
 
-package Question.Q387;
+package Question.Q387_p;
 
 public class Solution2 {
     public int firstUniqChar(String s) {
-        char[] c = s.toCharArray();
-        for (int i = 0; i < c.length  ; i++) {
-//            int result1 = s.indexOf(c[i]);
-//            int result2 = s.lastIndexOf(c[i]);
-            if (s.indexOf(c[i]) == s.lastIndexOf(c[i])){
+
+        for (int i = 0; i < s.length()  ; i++) {
+            if (s.indexOf(s.charAt(i)) == s.lastIndexOf(s.charAt(i))){
                 return i;
             }
-
         }
 
         return -1;

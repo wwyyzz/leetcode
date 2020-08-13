@@ -1,12 +1,7 @@
-package Question.Q237;
+package Question.Q237_p;
 
 import org.junit.Test;
 
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) { val = x; }
-}
 
 public class Solution1Test {
 
@@ -20,11 +15,16 @@ public class Solution1Test {
         a2.next = a3;
         a3.next = a4;
 
-        ListNode next = a1;
-        while (next != null){
-            System.out.println(next.val);
-            next = next.next;
+        ListNode head = a1;
+
+//        new Solution1().deleteNode(a2);
+        new Solution1().deleteNode(a3);
+        while (head != null){
+            System.out.println(head.val);
+            head = head.next;
         }
+
+
 
     }
 }
