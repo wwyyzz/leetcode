@@ -16,10 +16,16 @@
  * 进阶:
  * 如果输入字符串包含 unicode 字符怎么办？你能否调整你的解法来应对这种情况？
  */
-package Question.Q242_p;
+package Question.Q242_pass;
 
 import java.util.Arrays;
 
+/**
+ * 34 / 34 个通过测试用例
+ * 状态：通过
+ * 执行用时：13 ms
+ * 内存消耗：40.5 MB
+ */
 public class Solution2 {
         public boolean isAnagram(String s, String t) {
 
