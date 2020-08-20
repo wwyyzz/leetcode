@@ -23,7 +23,7 @@
 
 package Question.Q7_pass;
 
-public class Solution1 {
+class Solution1 {
     public int reverse(int x) {
         int result = 0;
         String s = "" + x;

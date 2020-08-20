@@ -29,7 +29,7 @@ class s2 {
         System.out.println("hums_map = "+ nums_map);
 
 
-        int complement = 0;
+        int complement ;
 
         for (int i = 0; i < nums.length; i++) {
             complement = target - nums[i];
