@@ -43,7 +43,6 @@ import java.util.Arrays;
  */
 public class Solution2 {
     public boolean buddyStrings(String A, String B){
-        boolean result = false;
 
         if (A.length() != B.length()) {
             return false;
