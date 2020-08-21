@@ -1,8 +1,6 @@
-package Question.Q102;
+package Question.Q102_p;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class Solution1Test {
 
@@ -19,12 +17,8 @@ public class Solution1Test {
         TreeNode right3 = new TreeNode(7);
         right2.left = left3;
         right2.right = right3;
+
+        new Solution1().levelOrder(root);
     }
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x; }
-}
