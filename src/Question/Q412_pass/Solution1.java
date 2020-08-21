@@ -27,7 +27,7 @@
  *     "FizzBuzz"
  * ]
  */
-package Question.Q412_p;
+package Question.Q412_pass;
 
 import java.util.ArrayList;
 import java.util.List;
