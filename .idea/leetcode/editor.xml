@@ -3,11 +3,59 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="/tmp/leetcode/editor/cn/[1337]方阵中战斗力最弱的 K 行.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="/tmp/leetcode/editor/cn/[1337]方阵中战斗力最弱的 K 行.java" />
+              <option name="questionId" value="1463" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[1342]将数字变成 0 的操作次数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="/tmp/leetcode/editor/cn/[1342]将数字变成 0 的操作次数.java" />
+              <option name="questionId" value="1444" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[26]删除排序数组中的重复项.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="/tmp/leetcode/editor/cn/[26]删除排序数组中的重复项.java" />
+              <option name="questionId" value="26" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/tmp/leetcode/editor/cn/[27]移除元素.java">
           <value>
             <LeetcodeEditor>
               <option name="path" value="/tmp/leetcode/editor/cn/[27]移除元素.java" />
               <option name="questionId" value="27" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[287]寻找重复数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="/tmp/leetcode/editor/cn/[287]寻找重复数.java" />
+              <option name="questionId" value="287" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[50]Pow(x, n).java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="/tmp/leetcode/editor/cn/[50]Pow(x, n).java" />
+              <option name="questionId" value="50" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[57]插入区间.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="/tmp/leetcode/editor/cn/[57]插入区间.java" />
+              <option name="questionId" value="57" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -24,6 +72,14 @@
             <LeetcodeEditor>
               <option name="path" value="/tmp/leetcode/editor/cn/[70]爬楼梯.java" />
               <option name="questionId" value="70" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[71]简化路径.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="/tmp/leetcode/editor/cn/[71]简化路径.java" />
+              <option name="questionId" value="71" />
             </LeetcodeEditor>
           </value>
         </entry>

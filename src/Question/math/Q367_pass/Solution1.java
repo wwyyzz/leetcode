@@ -1,0 +1,45 @@
+/**
+ * 367. 有效的完全平方数
+ * 给定一个正整数 num，编写一个函数，如果 num 是一个完全平方数，则返回 True，否则返回 False。
+ *
+ * 说明：不要使用任何内置的库函数，如  sqrt。
+ *
+ * 示例 1：
+ * 输入：16
+ * 输出：True
+ *
+ * 示例 2：
+ * 输入：14
+ * 输出：False
+ */
+package Question.math.Q367_pass;
+
+/**
+ *68 / 68 个通过测试用例
+ * 状态：通过
+ * 执行用时：6 ms
+ *
+ * 我的提交执行用时
+ * 已经战胜 19.81 % 的 java 提交记录
+ */
+public class Solution1 {
+    public boolean isPerfectSquare(int num) {
+        if ( num > 2147395600){
+            return false;
+        }
+        if ( num == 2147395600){
+            return true;
+        }
+
+
+        int sqrt = 0;
+        for (int i = 0; i < 46341 ; i++) {
+            if ((i*i <= num) && ((i+1)*(i+1) > num) ){
+                sqrt = i;
+            }
+        }
+        System.out.println(sqrt * sqrt);
+        System.out.println(sqrt );
+        return num == sqrt * sqrt;
+    }
+}
