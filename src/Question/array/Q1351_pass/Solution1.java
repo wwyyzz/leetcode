@@ -33,10 +33,13 @@
  -100 <= grid[i][j] <= 100
  */
 
-package Question.array.Q1351_p;
+package Question.array.Q1351_pass;
 
 /**
-
+ 执行用时：
+ 1 ms, 在所有 Java 提交中击败了45.61%的用户
+ 内存消耗：
+ 40.1 MB, 在所有 Java 提交中击败了78.44%的用户
  */
 public class Solution1 {
     public int countNegatives(int[][] grid){
