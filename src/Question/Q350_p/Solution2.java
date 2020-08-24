@@ -27,7 +27,9 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 /**
-
+ 执行用时：
+ 4 ms, 在所有 Java 提交中击败了61.40%的用户内存消耗：
+ 39.8 MB, 在所有 Java 提交中击败了70.54%的用户
  */
 public class Solution2 {
     public int[] intersect(int[] nums1, int[] nums2){
@@ -54,8 +56,9 @@ public class Solution2 {
         }
 
         for (int i = 0; i < nums2.length; i++) {
-            if (map.containsKey(nums2[i])) {
-                map.put(nums1[i],map.get(nums1[i]) - 1);
+            Integer get = map.getOrDefault(nums2[i], 0);
+            if (get > 0) {
+                map.put(nums2[i],map.get(nums2[i]) - 1);
                 result_list.add(nums2[i]);
             }
         }

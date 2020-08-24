@@ -42,4 +42,21 @@ public class Solution2Test {
         assertArrayEquals(result, new Solution2().intersect(num1,num2));
     }
 
+    @Test
+    public void intersect5() {
+        int[] num1 = {1,2};
+        int[] num2 = {1,1};
+        int[] result = {1};
+
+        assertArrayEquals(result, new Solution2().intersect(num1,num2));
+    }
+
+    @Test
+    public void intersect6() {
+        int[] num1 = {2,1};
+        int[] num2 = {1,1};
+        int[] result = {1};
+
+        assertArrayEquals(result, new Solution2().intersect(num1,num2));
+    }
 }
