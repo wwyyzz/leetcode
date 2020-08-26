@@ -17,7 +17,7 @@
  所以，4 是第一个错误的版本。
  */
 
-package Question.binary_search.Q278;
+package Question.binary_search.Q278_pass;
 
 /**
 
@@ -29,11 +29,16 @@ public class Solution1 {
         int start = 1;
         int end = n ;
 
-        while (start < end) {
+        while (start <= end) {
             int mid = (start + end) / 2 ;
-            if (isBadVersion(mid) == false) {
+            if (isBadVersion(mid) == false && isBadVersion(mid - 1) == true) {
+                return mid;
+            } else if (isBadVersion(mid) == false) {
                 end = mid - 1;
-            } else if (isBadVersion(mid)) {
+            } else if (isBadVersion(mid) == true && isBadVersion(mid - 1) == false) {
+                return mid + 1;
+            } else if (isBadVersion(mid) == true) {
+                start = mid + 1;
             }
         }
 

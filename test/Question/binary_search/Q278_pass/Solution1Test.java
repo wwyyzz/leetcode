@@ -1,4 +1,4 @@
-package Question.binary_search.Q278;
+package Question.binary_search.Q278_pass;
 
 import org.junit.Test;
 
@@ -8,6 +8,6 @@ public class Solution1Test {
 
     @Test
     public void firstBadVersion() {
-        new Solution1().firstBadVersion(5);
+        assertEquals(4,new Solution1().firstBadVersion(5));
     }
 }
