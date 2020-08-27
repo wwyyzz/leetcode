@@ -22,7 +22,7 @@
  nums 的每个元素都将在 [-9999, 9999]之间。
  */
 
-package Question.binary_search.Q704;
+package Question.binary_search.Q704_p;
 
 /**
 
