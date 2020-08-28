@@ -23,8 +23,14 @@
  * 执行用时：1 ms
  */
 
-package Question.string.Q709;
+package Question.string.Q709_pass;
 
+/**
+ * 执行用时：
+ * 0 ms, 在所有 Java 提交中击败了100.00%的用户
+ * 内存消耗：
+ * 37.3 MB, 在所有 Java 提交中击败了75.13%的用户
+ */
 public class Solution1 {
     public String toLowerCase(String str) {
         char[] arr = str.toCharArray();
