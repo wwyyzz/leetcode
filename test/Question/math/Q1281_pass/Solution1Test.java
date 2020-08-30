@@ -1,4 +1,4 @@
-package Question.Q1281_pass;
+package Question.math.Q1281_pass;
 
 import org.junit.Test;
 

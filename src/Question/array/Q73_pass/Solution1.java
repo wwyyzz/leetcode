@@ -37,12 +37,14 @@
  你能想出一个常数空间的解决方案吗？
  */
 
-package Question.array.Q73_p;
+package Question.array.Q73_pass;
 
 import java.util.HashSet;
 
 /**
-
+ 执行用时：
+ 3 ms, 在所有 Java 提交中击败了23.21%的用户内存消耗：
+ 41.4 MB, 在所有 Java 提交中击败了24.15%的用户
  */
 public class Solution1 {
     public void setZeroes(int[][] matrix) {

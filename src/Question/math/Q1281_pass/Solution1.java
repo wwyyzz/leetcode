@@ -27,7 +27,7 @@
  1 <= n <= 10^5
  */
 
-package Question.Q1281_pass;
+package Question.math.Q1281_pass;
 
 /**
  执行用时：

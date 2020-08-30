@@ -1,4 +1,4 @@
-package Question.string.Q20_pass;
+package Question.stack.Q20_pass;
 
 import org.junit.Test;
 

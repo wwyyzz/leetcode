@@ -1,4 +1,4 @@
-package Question.array.Q73_p;
+package Question.array.Q73_pass;
 
 import org.junit.Test;
 

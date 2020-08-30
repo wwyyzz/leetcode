@@ -29,7 +29,7 @@
  输出: true
  */
 
-package Question.string.Q20_pass;
+package Question.stack.Q20_pass;
 
 import java.util.LinkedList;
 
