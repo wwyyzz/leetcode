@@ -1,4 +1,4 @@
-package Question.binary_search.Q704_p;
+package Question.binary_search.Q704_pass;
 
 import org.junit.Test;
 

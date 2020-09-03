@@ -1,4 +1,4 @@
-package Question.array.Q922_pass;
+package Question.sort.Q922_pass;
 
 import org.junit.Test;
 

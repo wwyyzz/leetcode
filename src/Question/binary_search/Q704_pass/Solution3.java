@@ -22,20 +22,19 @@
  nums 的每个元素都将在 [-9999, 9999]之间。
  */
 
-package Question.binary_search.Q704_p;
+package Question.binary_search.Q704_pass;
 
 /**
 
  */
-public class Solution1 {
+public class Solution3 {
     public int search(int[] nums, int target){
 
         int start = 0;
-        int end = nums.length - 1;
+        int end = nums.length ;
 
 
         while (start <= end) {
-//            int mid = (start + end) / 2;
             int mid = start + (end - start) / 2;
             if (nums[mid] < target) {
                 start = mid + 1;

@@ -15,7 +15,7 @@
  * A.length % 2 == 0
  * 0 <= A[i] <= 1000
  */
-package Question.array.Q922_pass;
+package Question.sort.Q922_pass;
 
 import java.util.ArrayList;
 

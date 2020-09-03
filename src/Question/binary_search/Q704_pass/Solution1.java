@@ -22,32 +22,39 @@
  nums 的每个元素都将在 [-9999, 9999]之间。
  */
 
-package Question.binary_search.Q704_p;
+package Question.binary_search.Q704_pass;
 
 /**
-
+ 执行用时：
+ 0 ms
+ , 在所有 Java 提交中击败了
+ 100.00%
+ 的用户
+ 内存消耗：
+ 40.9 MB
+ , 在所有 Java 提交中击败了
+ 34.43%
+ 的用户
  */
-public class Solution2 {
+public class Solution1 {
     public int search(int[] nums, int target){
 
         int start = 0;
-        int end = nums.length ;
+        int end = nums.length - 1;
 
 
-        while (start < end) {
+        while (start <= end) {
+//            int mid = (start + end) / 2;
             int mid = start + (end - start) / 2;
             if (nums[mid] < target) {
                 start = mid + 1;
             } else if (nums[mid] > target) {
-                end = mid ;
+                end = mid - 1;
             }else{
                 return mid;
             }
         }
 
-        if (start != nums.length && nums[start] == target) {
-            return start;
-        }
         return -1;
 
     }

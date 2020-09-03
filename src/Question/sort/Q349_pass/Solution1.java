@@ -20,7 +20,7 @@
  我们可以不考虑输出结果的顺序。
  */
 
-package Question.Q349_pass;
+package Question.sort.Q349_pass;
 
 import java.util.Arrays;
 import java.util.HashSet;

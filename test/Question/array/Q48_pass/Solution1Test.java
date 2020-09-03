@@ -1,8 +1,6 @@
-package Question.array.Q48;
+package Question.array.Q48_pass;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class Solution1Test {
 
