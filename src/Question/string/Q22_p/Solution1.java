@@ -13,7 +13,7 @@
  ]
  */
 
-package Question.Q22_p;
+package Question.string.Q22_p;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
