@@ -16,7 +16,7 @@
  * 我们可以构造的最长的回文串是"dccaccd", 它的长度是 7。
  */
 
-package Question.Q409;
+package Question.HashTable.Q409;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package Question.Q242_pass;
+package Question.HashTable.Q242_pass;
 
 import org.junit.Test;
 

@@ -15,48 +15,21 @@
 //        输入: [4,1,2,1,2]
 //        输出: 4
 
-package Question.Bitwise.Q136_pass;
+package Question.HashTable.Q136_pass;
 import java.util.*;
 
+/**
+ * 16 / 16 个通过测试用例
+ * 状态：通过
+ * 执行用时: 483 ms
+ * 内存消耗: 41.6 MB
+ */
 public class Solution1 {
-
-}
-
-class s1 {
-
-    public int singleNumber(int[] nums) {
-        int result = 0;
-        int flag = 0;
-        Arrays.sort(nums);
-        for (int i = 0; i < nums.length; i++) {
-            flag = 0;
-            for (int j = 0; j < nums.length; j++) {
-//                System.out.println("num[i]="+nums[i]+" nums[j]" + nums[j]);
-                if (i != j && nums[j] == nums[i]) {
-                    flag = 1;
-                    break;
-                }
-
-            }
-//            System.out.println("flag = "+flag);
-            if (flag == 0){
-//                System.out.println("result = "+nums[i]);
-                result = nums[i];
-                break;
-            }
-
-        }
-        return result;
-    }
-}
-
-class s2 {
-
     public int singleNumber(int[] nums) {
         ArrayList<Integer> list1 = new ArrayList<>();
 
         for (Integer i:nums
-             ) {
+        ) {
             list1.add(i);
         }
 
@@ -65,11 +38,11 @@ class s2 {
         ArrayList<Integer> list2 = new ArrayList(set);
 
         for (Integer i:list2
-             ) {
+        ) {
             list1.remove(i);
         }
         for (Integer i:list1
-                ) {
+        ) {
             list2.remove(i);
         }
 
@@ -77,3 +50,4 @@ class s2 {
 
     }
 }
+

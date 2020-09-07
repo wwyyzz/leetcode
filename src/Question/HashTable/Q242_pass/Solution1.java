@@ -19,7 +19,7 @@
  *
  * 34 / 34 个通过测试用例
  */
-package Question.Q242_pass;
+package Question.HashTable.Q242_pass;
 
 import java.util.HashSet;
 import java.util.Set;

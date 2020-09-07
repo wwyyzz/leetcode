@@ -16,7 +16,7 @@
  * 解释：
  * 'e' 是那个被添加的字母。
  */
-package Question.Q389;
+package Question.HashTable.Q389;
 
 import java.util.*;
 

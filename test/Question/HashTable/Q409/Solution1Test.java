@@ -1,4 +1,4 @@
-package Question.Q409;
+package Question.HashTable.Q409;
 
 import org.junit.Test;
 
