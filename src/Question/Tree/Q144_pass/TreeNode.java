@@ -1,4 +1,4 @@
-package Question.Tree.Q94_p;
+package Question.Tree.Q144_pass;
 
 public class TreeNode {
     int val;

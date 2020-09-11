@@ -1,4 +1,4 @@
-package Question.Tree.Q144_p;
+package Question.Tree.Q144_pass;
 
 import org.junit.Test;
 

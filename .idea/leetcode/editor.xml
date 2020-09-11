@@ -51,6 +51,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="/tmp/leetcode/editor/cn/[126]单词接龙 II.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="/tmp/leetcode/editor/cn/[126]单词接龙 II.java" />
+              <option name="questionId" value="126" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/tmp/leetcode/editor/cn/[1337]方阵中战斗力最弱的 K 行.java">
           <value>
             <LeetcodeEditor>
@@ -104,6 +112,14 @@
             <LeetcodeEditor>
               <option name="path" value="/tmp/leetcode/editor/cn/[1528]重新排列字符串.java" />
               <option name="questionId" value="1651" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[204]计数质数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="/tmp/leetcode/editor/cn/[204]计数质数.java" />
+              <option name="questionId" value="204" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -216,6 +232,14 @@
             <LeetcodeEditor>
               <option name="path" value="/tmp/leetcode/editor/cn/[50]Pow(x, n).java" />
               <option name="questionId" value="50" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[53]最大子序和.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="/tmp/leetcode/editor/cn/[53]最大子序和.java" />
+              <option name="questionId" value="53" />
             </LeetcodeEditor>
           </value>
         </entry>

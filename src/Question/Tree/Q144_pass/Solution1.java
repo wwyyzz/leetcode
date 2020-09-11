@@ -15,18 +15,25 @@
  进阶: 递归算法很简单，你可以通过迭代算法完成吗？
  */
 
-package Question.Tree.Q144_p;
+package Question.Tree.Q144_pass;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 /**
-
+ 执行用时：
+ 0 ms, 在所有 Java 提交中击败了100.00%的用户
+ 内存消耗：
+ 37.9 MB, 在所有 Java 提交中击败了69.03%的用户
  */
 public class Solution1 {
     public List<Integer> preorderTraversal(TreeNode root){
+
         List<Integer> result = new ArrayList<>();
+        if (root == null) {
+            return result;
+        }
 
         LinkedList<TreeNode> stack = new LinkedList();
 
