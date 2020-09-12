@@ -16,7 +16,7 @@
  你可以在常数空间复杂度内完成这个题目吗？（ 出于对空间复杂度分析的目的，输出数组不被视为额外空间。）
  */
 
-package Question.Array.Q238_p;
+package Question.Array.Q238_pass;
 
 import java.util.Arrays;
 

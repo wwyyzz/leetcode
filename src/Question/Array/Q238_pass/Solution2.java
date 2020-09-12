@@ -16,33 +16,35 @@
  你可以在常数空间复杂度内完成这个题目吗？（ 出于对空间复杂度分析的目的，输出数组不被视为额外空间。）
  */
 
-package Question.Array.Q238_p;
+package Question.Array.Q238_pass;
 
 import java.util.Arrays;
 
 /**
  时间复杂度为O(n)，满足题目要求
- 空间复杂度满足要求
+ 但是空间复杂度不满足要求
  */
-public class Solution3 {
+public class Solution2 {
     public int[] productExceptSelf(int[] nums){
         int[] result = new int[nums.length];
-//        int[] left = new int[nums.length];
-//        int[] right = new int[nums.length];
+        int[] left = new int[nums.length];
+        int[] right = new int[nums.length];
 
-        result[0] = 1;
+        left[0] = 1;
         for (int i = 1; i < nums.length; i++) {
-            result[i] = result[i - 1] * nums[i - 1];
+            left[i] = left[i - 1] * nums[i - 1];
         }
-        System.out.println(Arrays.toString(result));
+        System.out.println(Arrays.toString(left));
 
-        int right = 1;
-        for (int i = nums.length -1; i >= 0; i--) {
-            result[i] = result[i] * right;
-            right *= nums[i];
+        right[nums.length - 1] = 1;
+        for (int i = nums.length -2; i >= 0; i--) {
+            right[i] = right[i + 1] * nums[i + 1];
         }
-        System.out.println(Arrays.toString(result));
+        System.out.println(Arrays.toString(right));
 
+        for (int i = 0; i < nums.length; i++) {
+            result[i] = left[i] * right[i];
+        }
 
         System.out.println(Arrays.toString(result));
 
