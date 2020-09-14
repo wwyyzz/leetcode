@@ -21,9 +21,7 @@
 
 package Question.Tree.Q257;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
 
@@ -31,32 +29,40 @@ import java.util.List;
 public class Solution1 {
     public List<String> binaryTreePaths(TreeNode root){
         List<String> result = new ArrayList<>();
+        List<ArrayList> result_list = new ArrayList<>();
 
-        LinkedList<TreeNode> queue = new LinkedList();
-        queue.add(root);
+        LinkedList<ArrayList> queue = new LinkedList();
+        ArrayList<TreeNode> list = new ArrayList();
+        list.add(root);
+        queue.add(list);
 
         while (!queue.isEmpty()) {
 
             int size = queue.size();
             for (int i = 0; i < size; i++) {
-                TreeNode node = queue.poll();
+                ArrayList<TreeNode> tmp = new ArrayList<>();
+                tmp = queue.poll();
+                int len = tmp.size();
+                TreeNode node = tmp.get(len - 1);
                 StringBuilder sb = new StringBuilder(node.val);
 //                sb = "" + node.val;
                 if (node.left == null && node.right == null) {
-                    result.add("" + node.val);
+                    result_list.add(tmp);
                     continue;
                 }
                 if (node.left != null) {
-                    queue.add(node.left);
+                    tmp.add(node.left);
+                    queue.add(tmp);
                 }
                 if (node.right != null) {
-                    queue.add(node.right);
+                    tmp.add(node.right);
+                    queue.add(tmp);
                 }
 
             }
         }
 
-        System.out.println(result);
+        System.out.println();
 
         return result;
 
