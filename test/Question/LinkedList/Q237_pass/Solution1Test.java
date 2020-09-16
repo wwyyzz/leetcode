@@ -1,5 +1,6 @@
-package Question.Q237_pass;
+package Question.LinkedList.Q237_pass;
 
+import Question.LinkedList.ListNode;
 import org.junit.Test;
 
 

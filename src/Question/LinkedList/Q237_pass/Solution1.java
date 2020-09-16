@@ -23,7 +23,7 @@
  * 给定的节点为非末尾节点并且一定是链表中的一个有效节点。
  * 不要从你的函数中返回任何结果。
  */
-package Question.Q237_pass;
+package Question.LinkedList.Q237_pass;
 
 /**
  * Definition for singly-linked list.
@@ -34,6 +34,8 @@ package Question.Q237_pass;
  * }
  */
 
+
+import Question.LinkedList.ListNode;
 
 /**
  *

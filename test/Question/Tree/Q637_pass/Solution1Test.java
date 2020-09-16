@@ -1,5 +1,6 @@
 package Question.Tree.Q637_pass;
 
+import Question.Tree.TreeNode;
 import junit.framework.TestCase;
 
 public class Solution1Test extends TestCase {

@@ -20,6 +20,8 @@
 
 package Question.Tree.Q111_pass;
 
+import Question.Tree.TreeNode;
+
 import java.util.LinkedList;
 
 /**

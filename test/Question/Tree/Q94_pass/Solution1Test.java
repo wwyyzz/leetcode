@@ -1,5 +1,6 @@
 package Question.Tree.Q94_pass;
 
+import Question.Tree.TreeNode;
 import org.junit.Test;
 
 public class Solution1Test {

@@ -23,6 +23,8 @@
 
 package Question.Tree.Q637_pass;
 
+import Question.Tree.TreeNode;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;

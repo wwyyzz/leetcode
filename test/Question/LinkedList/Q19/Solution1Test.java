@@ -1,8 +1,7 @@
-package Question.Q19;
+package Question.LinkedList.Q19;
 
+import Question.LinkedList.ListNode;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class Solution1Test {
 

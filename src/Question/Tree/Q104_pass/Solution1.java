@@ -19,6 +19,8 @@
 
 package Question.Tree.Q104_pass;
 
+import Question.Tree.TreeNode;
+
 import java.util.LinkedList;
 
 /**

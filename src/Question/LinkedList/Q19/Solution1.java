@@ -16,7 +16,9 @@
  你能尝试使用一趟扫描实现吗？
  */
 
-package Question.Q19;
+package Question.LinkedList.Q19;
+
+import Question.LinkedList.ListNode;
 
 /**
 
