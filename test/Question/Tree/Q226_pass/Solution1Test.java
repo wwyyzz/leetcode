@@ -1,9 +1,7 @@
-package Question.Tree.Q226;
+package Question.Tree.Q226_pass;
 
 import Question.Tree.TreeNode;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class Solution1Test {
 
