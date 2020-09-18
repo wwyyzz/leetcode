@@ -16,19 +16,24 @@
  你能尝试使用一趟扫描实现吗？
  */
 
-package Question.LinkedList.Q19;
+package Question.LinkedList.Q19_pass;
 
 import Question.LinkedList.ListNode;
 
 /**
-
+ 执行用时：
+ 0 ms, 在所有 Java 提交中击败了100.00%的用户
+ 内存消耗：
+ 37.3 MB, 在所有 Java 提交中击败了8.71%的用户
  */
-public class Solution1 {
+public class Solution2 {
     public ListNode removeNthFromEnd(ListNode head, int n){
 
         int len = 0;
 
         ListNode nodes = head;
+        ListNode dummy = new ListNode();
+        dummy.next = head;
 
         while (nodes != null){
             System.out.println(nodes.val);
@@ -36,25 +41,20 @@ public class Solution1 {
             len++;
         }
 
+
         System.out.println("length :" + len);
 
-        len -= n;
-        nodes = head;
-        while (len > 0) {
+        nodes = dummy;
+        int pos = len - n;
+        int count = 0;
+        while (count < pos) {
             nodes = nodes.next;
-            len--;
+            count++;
         }
 
         nodes.next = nodes.next.next;
 
-        nodes = head;
-
-        while (nodes != null){
-            System.out.println(nodes.val);
-            nodes = nodes.next;
-        }
-
-        return nodes;
+        return dummy.next;
 
     }
 }

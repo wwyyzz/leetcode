@@ -10,39 +10,39 @@
  你可以迭代或递归地反转链表。你能否用两种方法解决这道题？
  */
 
-package Question.LinkedList.Q206;
+package Question.LinkedList.Q206_pass;
 
 import Question.LinkedList.ListNode;
 
 import java.util.LinkedList;
 
 /**
-
+ 执行用时：
+ 1 ms, 在所有 Java 提交中击败了100.00%的用户
+ 内存消耗：
+ 38.7 MB, 在所有 Java 提交中击败了63.19%的用户
  */
 public class Solution1 {
     public ListNode reverseList(ListNode head){
 
-        ListNode result = new ListNode();
-        result = head;
-
+        ListNode nodes = head;
         LinkedList<Integer> stack = new LinkedList<>();
 
-        while (head != null) {
-            stack.push(head.val);
-            head = head.next;
+        while (nodes != null) {
+            stack.push(nodes.val);
+            nodes = nodes.next;
         }
 
         System.out.println(stack);
-
-        while (result != null) {
+        nodes = head;
+        while (nodes != null) {
             Integer v = stack.pop();
-            System.out.println("listnode : " + result.val);
-            result.val = v;
-            result = result.next;
+            nodes.val = v;
+            nodes = nodes.next;
         }
 
-        System.out.println(result);
-        return result;
+        System.out.println(head);
+        return head;
 
     }
 }

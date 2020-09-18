@@ -1,9 +1,7 @@
-package Question.LinkedList.Q206;
+package Question.LinkedList.Q206_pass;
 
 import Question.LinkedList.ListNode;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class Solution1Test {
 
@@ -29,11 +27,10 @@ public class Solution1Test {
         head = node1;
 
         ListNode listNode = new Solution1().reverseList(head);
-        head = listNode;
 
-        while (head != null) {
-            System.out.println("listnode : " + head.val);
-            head = head.next;
+        while (listNode != null) {
+            System.out.println("listnode : " + listNode.val);
+            listNode = listNode.next;
         }
     }
 }

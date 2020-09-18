@@ -1,4 +1,4 @@
-package Question.LinkedList.Q19;
+package Question.LinkedList.Q19_pass;
 
 import Question.LinkedList.ListNode;
 import org.junit.Test;
