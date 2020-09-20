@@ -1,4 +1,4 @@
-package Question.Tree.Q404;
+package Question.Tree.Q404_pass;
 
 import Question.Tree.TreeNode;
 import org.junit.Test;

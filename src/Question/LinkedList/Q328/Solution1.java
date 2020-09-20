@@ -36,11 +36,15 @@ public class Solution1 {
         ListNode node_even = even;
 
         while (node != null) {
+            ListNode tmp = new ListNode(node.val);
+
             if (count % 2 != 0) {
-                node_odd.next = node;
+                node_odd.next = tmp;
                 node_odd = node_odd.next;
+
+
             } else {
-                node_even.next = node;
+                node_even.next = tmp;
                 node_even = node_even.next;
             }
             node = node.next;
