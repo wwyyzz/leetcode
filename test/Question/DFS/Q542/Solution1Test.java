@@ -1,8 +1,6 @@
-package Question.Q542;
+package Question.DFS.Q542;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class Solution1Test {
 

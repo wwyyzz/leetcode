@@ -33,7 +33,7 @@
  矩阵中的元素只在四个方向上相邻: 上、下、左、右。
  */
 
-package Question.Q542;
+package Question.DFS.Q542;
 
 import java.util.ArrayList;
 import java.util.Arrays;
