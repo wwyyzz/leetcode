@@ -28,15 +28,9 @@ import java.util.Iterator;
 
 /**
  执行用时：
- 4 ms
- , 在所有 Java 提交中击败了
- 51.37%
- 的用户
+ 4 ms, 在所有 Java 提交中击败了51.37%的用户
  内存消耗：
- 39.3 MB
- , 在所有 Java 提交中击败了
- 5.72%
- 的用户
+ 39.3 MB, 在所有 Java 提交中击败了5.72%的用户
  */
 public class Solution1 {
     public int[] intersection(int[] nums1, int[] nums2) {
@@ -51,10 +45,7 @@ public class Solution1 {
             }
         }
 
-
-
         int[] result = new int[set.size()];
-
 
         Iterator<Integer> iterator = set.iterator();
         for (int i = 0; i < result.length; i++) {

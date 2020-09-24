@@ -1,4 +1,4 @@
-package Question.Array.Q217_pass;
+package Question.HashTable.Q217_pass;
 
 import java.util.HashSet;
 import java.util.Set;
