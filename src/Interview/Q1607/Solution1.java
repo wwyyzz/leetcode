@@ -15,7 +15,12 @@ package Interview.Q1607;
  */
 public class Solution1 {
     public int maximum(int a, int b){
+        int result = 0;
 
+
+
+
+        return result;
 
     }
 }

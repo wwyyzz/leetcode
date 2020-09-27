@@ -1,10 +1,8 @@
-package Question.Tree.Q145;
+package Question.Tree.Q145_p;
 
 
 import Question.Tree.TreeNode;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class Solution1Test {
 

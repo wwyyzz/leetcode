@@ -36,7 +36,7 @@
  输出: false
  */
 
-package Question.Tree.Q100_p;
+package Question.Tree.Q100_pass;
 
 import Question.Tree.TreeNode;
 

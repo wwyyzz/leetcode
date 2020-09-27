@@ -15,11 +15,10 @@
  进阶: 递归算法很简单，你可以通过迭代算法完成吗？
  */
 
-package Question.Tree.Q145;
+package Question.Tree.Q145_p;
 
 import Question.Tree.TreeNode;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -28,7 +27,7 @@ import java.util.List;
  */
 public class Solution1 {
         public List<Integer> postorderTraversal(TreeNode root){
-        List<Integer> result = new ArrayList<>();
+        LinkedList<Integer> result = new LinkedList<>();
 
         LinkedList<TreeNode> stack = new LinkedList();
 
@@ -36,14 +35,12 @@ public class Solution1 {
 
         while ( !stack.isEmpty()) {
             TreeNode cur = stack.pop();
-            result.add(cur.val);
-
-            if (cur.right != null) {
-                stack.push(cur.right);
-            }
-
+            result.addFirst(cur.val);
             if (cur.left != null) {
                 stack.push(cur.left);
+            }
+            if (cur.right != null) {
+                stack.push(cur.right);
             }
 
         }
