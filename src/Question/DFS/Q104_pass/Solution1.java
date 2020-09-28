@@ -58,7 +58,6 @@ public class Solution1 {
                 if (null != node.right) {
                     queue.offer(node.right);
                 }
-
             }
             depth++;
         }
