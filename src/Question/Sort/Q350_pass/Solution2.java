@@ -20,7 +20,7 @@
  如果 nums2 的元素存储在磁盘上，磁盘内存是有限的，并且你不能一次加载所有的元素到内存中，你该怎么办？
  */
 
-package Question.Q350_p;
+package Question.Sort.Q350_pass;
 
 import java.util.ArrayList;
 import java.util.Arrays;

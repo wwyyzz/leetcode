@@ -46,6 +46,8 @@
 
 package Contest.W207.Q5519_pass;
 
+import java.util.Arrays;
+
 /**
  88 / 88 个通过测试用例
  状态：通过
@@ -62,7 +64,7 @@ public class Solution1 {
 
         int word_nums = text_arr.length;
         int letter_nums = 0;
-        System.out.println(text_arr);
+        System.out.println(Arrays.toString(text_arr));
         for (int i = 0; i < word_nums ; i++) {
             letter_nums += text_arr[i].length();
             System.out.println(text_arr[i]);
