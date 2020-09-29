@@ -52,10 +52,7 @@ public class Solution1 {
             return false;
         }
 
-        for (Object c:set_of_t
-             ) {
-            set_of_s.add(c);
-        }
+        set_of_s.addAll(set_of_t);
 
         if (size_s == set_of_s.size()){
             return true;

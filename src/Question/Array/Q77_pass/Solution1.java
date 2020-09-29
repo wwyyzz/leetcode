@@ -63,9 +63,7 @@ public class Solution1 {
 
         System.out.println(queue);
 
-        for (List<Integer> list : queue) {
-            result.add(list);
-        }
+        result.addAll(queue);
 
         System.out.println(result);
         return result;
