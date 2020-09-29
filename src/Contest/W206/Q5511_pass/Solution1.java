@@ -6,7 +6,6 @@ package Contest.W206.Q5511_pass;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
 
 /**
  95 / 95 个通过测试用例

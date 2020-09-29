@@ -45,8 +45,8 @@ public class Solution1 {
 
         for (int i = sqr_of_area; i >= 1; i--) {
             if ( (area % i) == 0){
-                result[0] = i > area / i ? i : area / i;
-                result[1] = i > area / i ?  area / i : i ;
+                result[0] = Math.max(i, area / i);
+                result[1] = Math.min(i, area / i);
                 break;
             }
         }

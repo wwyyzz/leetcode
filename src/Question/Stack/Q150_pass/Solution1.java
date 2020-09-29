@@ -83,7 +83,7 @@ public class Solution1 {
                         s.push(a * b);
                         break;
                     case '/' :
-                        s.push((int)(a / b));
+                        s.push(a / b);
                         break;
                 }
             }

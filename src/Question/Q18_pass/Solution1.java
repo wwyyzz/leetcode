@@ -18,20 +18,22 @@
  ]
  */
 
-package Question.Q18_p;
+package Question.Q18_pass;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
-
+ 执行用时：
+ 444 ms, 在所有 Java 提交中击败了5.01%的用户
+ 内存消耗：
+ 39.5 MB, 在所有 Java 提交中击败了12.59%的用户
  */
 public class Solution1 {
     public List<List<Integer>> fourSum(int[] nums, int target) {
         List<List<Integer>> result = new ArrayList();
 
+        HashSet<List> map = new HashSet<>();
 
         for (int a = 0; a < nums.length - 3; a++) {
             for (int b = a + 1; b < nums.length - 2; b++){
@@ -39,7 +41,10 @@ public class Solution1 {
                     for (int d = c + 1; d < nums.length ; d++){
 
                         if ((nums[a] + nums[b] + nums[c] + nums[d]) == target){
-                            result.add(Arrays.asList(nums[a], nums[b], nums[c], nums[d]));
+                            List<Integer> tmp = Arrays.asList(nums[a], nums[b], nums[c], nums[d]);
+                            tmp.sort((o1, o2) -> o1 - o2);
+
+                            map.add(tmp);
 
                         }
                     }
@@ -47,6 +52,9 @@ public class Solution1 {
             }
         }
 
+        for (List list : map) {
+            result.add(list);
+        }
         System.out.println(result);
 
         return result;

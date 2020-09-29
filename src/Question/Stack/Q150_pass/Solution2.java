@@ -88,7 +88,7 @@ public class Solution2 {
                 case "/" :
                     b = s.pop();
                     a = s.pop();
-                    s.push((int)(a / b));
+                    s.push(a / b);
                     break;
                 default:
                     s.push(Integer.valueOf(token));
