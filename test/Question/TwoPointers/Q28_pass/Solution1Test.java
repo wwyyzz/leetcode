@@ -1,4 +1,4 @@
-package Question.String.Q28_pass;
+package Question.TwoPointers.Q28_pass;
 
 import org.junit.Test;
 

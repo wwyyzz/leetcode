@@ -40,7 +40,7 @@
  *     print(nums[i]);
  * }
  */
-package Question.Array.Q27_pass;
+package Question.TwoPointers.Q27_pass;
 
 import java.util.Arrays;
 

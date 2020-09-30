@@ -25,7 +25,7 @@
  * 已经战胜 99.46 % 的 java 提交记录
  */
 
-package Question.String.Q28_pass;
+package Question.TwoPointers.Q28_pass;
 
 /**
  *
