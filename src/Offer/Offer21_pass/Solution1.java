@@ -13,12 +13,16 @@
  1 <= nums[i] <= 10000
  */
 
-package Offer.Offer21_p;
+package Offer.Offer21_pass;
 
 import java.util.Arrays;
 
 /**
  使用双指针
+ 执行用时：
+ 2 ms, 在所有 Java 提交中击败了99.78%的用户
+ 内存消耗：
+ 46.7 MB, 在所有 Java 提交中击败了58.48%的用户
  */
 public class Solution1 {
     public int[] exchange(int[] nums){
@@ -26,11 +30,11 @@ public class Solution1 {
         int R = nums.length - 1;
 
         while (L < R) {
-            while (nums[L] % 2 != 0) {
+            while (L < R &&  nums[L] % 2 != 0) {
                 L++;
             }
 
-            while (nums[R] % 2 == 0) {
+            while (L < R && nums[R] % 2 == 0) {
                 R--;
             }
 

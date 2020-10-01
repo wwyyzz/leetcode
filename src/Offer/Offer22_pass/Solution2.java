@@ -7,29 +7,34 @@
  返回链表 4->5.
  */
 
-package Offer.Offer22;
+package Offer.Offer22_pass;
 
 import Offer.ListNode;
 
-import java.util.ArrayList;
-
 /**
- 需要多占用一个List空间，可以优化
+ Solution1需要多占用一个List空间，优化如下
+ 需要遍历两次链表，还可以使用双指针继续优化
  */
-public class Solution1 {
+public class Solution2 {
     public ListNode getKthFromEnd(ListNode head, int k){
-        ListNode result = new ListNode();
+        ListNode node = new ListNode();
 
-        ArrayList<ListNode> list = new ArrayList<>();
-
-        while (head != null) {
-            list.add(head);
-            head = head.next;
+        int size = 0;
+        node = head;
+        while (node != null) {
+            size++;
+            node = node.next;
+        }
+        int n = size - k;
+        node = head;
+        while (n > 0) {
+            node = node.next;
+            n--;
         }
 
-        System.out.println(list);
+        System.out.println(node);
 
-        return list.get(list.size() - k);
+        return node;
 
     }
 }

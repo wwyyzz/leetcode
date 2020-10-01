@@ -48,9 +48,11 @@ public class Solution1 {
 
             for (int i = 0; i < size; i++) {
                 ArrayList<int[]> list = queue.poll();
-                String s = list.toString();
-                System.out.println(s);
-                System.out.println(Arrays.toString(new ArrayList[]{list}));
+//                String s = list.toString();
+                for (int[] ints : list) {
+                    System.out.println(Arrays.toString(ints));
+                }
+//                System.out.println(Arrays.toString(new ArrayList[]{list}));
 
             }
 

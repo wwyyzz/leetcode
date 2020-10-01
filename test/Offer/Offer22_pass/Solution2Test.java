@@ -1,4 +1,4 @@
-package Offer.Offer22;
+package Offer.Offer22_pass;
 
 import Offer.ListNode;
 import org.junit.Test;

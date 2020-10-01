@@ -7,7 +7,7 @@
  返回链表 4->5.
  */
 
-package Offer.Offer22;
+package Offer.Offer22_pass;
 
 import Offer.ListNode;
 
@@ -19,6 +19,10 @@ import Offer.ListNode;
  双指针共同移动： 循环中，双指针 former 和 latter 每轮都向前走一步，直至 former 走过链表 尾节点 时跳出（跳出后， latter 与尾节点距离为 k-1k−1，即 latter 指向倒数第 kk 个节点）。
  返回值： 返回 latter 即可。
 
+ 执行用时：
+ 0 ms, 在所有 Java 提交中击败了100.00%的用户
+ 内存消耗：
+ 36.6 MB, 在所有 Java 提交中击败了90.43%的用户
  */
 public class Solution3 {
     public ListNode getKthFromEnd(ListNode head, int k){
