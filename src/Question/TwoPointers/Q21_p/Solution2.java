@@ -9,21 +9,21 @@
  输出：1->1->2->3->4->4
  */
 
-package Question.TwoPointers.Q21;
+package Question.TwoPointers.Q21_p;
 
 import Question.LinkedList.ListNode;
 
-/**
+import java.util.ArrayList;
 
+/**
+使用双指针
  */
-public class Solution1 {
+public class Solution2 {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2){
         ListNode result = new ListNode();
 
 
-
-
-        return result;
+        return result.next;
 
 
     }
