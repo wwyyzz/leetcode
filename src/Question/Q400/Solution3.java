@@ -33,7 +33,7 @@ package Question.Q400;
 import java.util.HashMap;
 
 /**
- *
+ *  这是一道奥数题
  */
 public class Solution3 {
     public int findNthDigit(int n) {
@@ -62,13 +62,24 @@ public class Solution3 {
         System.out.println(map);
         System.out.println("digitals   :" + digitals);
 
-        int num = (int)Math.pow(10, digitals - 1) + (n - map.get(digitals - 1)) / digitals - 1;
+        int num = (int)Math.pow(10, digitals - 1) + (n - map.get(digitals - 1)) / digitals ;
 
         System.out.println("num   :" + num);
 
-        int pos = n % digitals;
 
-        return Integer.toString(num).charAt(pos) - '0';
+
+        int idx = n % digitals;
+
+        if (idx != 0)
+        {
+            return Integer.toString(num).charAt(idx) - '0';
+        }
+        else
+        {
+            String s = Integer.toString(num - 1);
+            return s.charAt(s.length() - 1) - '0';
+        }
+
 
     }
 }

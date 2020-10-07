@@ -21,18 +21,31 @@
 package Question.Array.Q75;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 /**
- 执行用时：
- 1 ms, 在所有 Java 提交中击败了10.55%的用户
- 内存消耗：
- 37.1 MB, 在所有 Java 提交中击败了89.39%的用户
 
- 使用了排序函数，不符合题目要求
  */
-public class Solution1 {
+public class Solution3 {
     public void sortColors(int[] nums){
-        Arrays.sort(nums);
+        if (nums.length == 1) {
+            return;
+        }
+
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        for (int num : nums) {
+            if (map.containsKey(num)) {
+                map.put(num, map.get(num) + 1);
+            } else {
+                map.put(num, 1);
+            }
+        }
+
+        Arrays.fill(nums,0,map.get(0)-1,0);
+        Arrays.fill(nums,map.get(0),map.get(0) + map.get(1) -1,1);
+        Arrays.fill(nums,map.get(0) + map.get(1),nums.length,2);
+
 
         System.out.println(Arrays.toString(nums));
 
