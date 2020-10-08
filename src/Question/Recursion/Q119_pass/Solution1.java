@@ -11,29 +11,28 @@
  你可以优化你的算法到 O(k) 空间复杂度吗？
  */
 
-package Question.Recursion.Q119_p;
+package Question.Recursion.Q119_pass;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 /**
-
+ 执行用时：
+ 2 ms, 在所有 Java 提交中击败了49.43%的用户
+ 内存消耗：
+ 36.2 MB, 在所有 Java 提交中击败了76.27%的用户
  */
 public class Solution1 {
     public List<Integer> getRow(int rowIndex){
         List<Integer> result = new ArrayList<>();
         List<List<Integer>> lists = new ArrayList<>();
 
-        if (rowIndex == 0) {
-            return result;
-        }
-
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
         lists.add(list);
 
-        if (rowIndex == 1) {
+        if (rowIndex == 0) {
             return list;
         }
 
@@ -42,12 +41,12 @@ public class Solution1 {
             list.add(1);
         }
         lists.add(list);
-        if (rowIndex == 2) {
+        if (rowIndex == 1) {
             return list;
         }
 
-        int level = 3;
-        while (level <= rowIndex) {
+        int level = 2;
+        while (level <= rowIndex + 1) {
             List<Integer> lastLevel = lists.get(lists.size() - 1);
             Integer[] currLevel = new Integer[level];
             currLevel[0] = 1;
@@ -60,8 +59,8 @@ public class Solution1 {
             level++;
         }
 
-        System.out.println(lists);
-        
+        // System.out.println(lists);
+
         return lists.get(lists.size() - 1);
 
     }

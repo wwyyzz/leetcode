@@ -1,4 +1,4 @@
-package Question.TwoPointers.Q21_p;
+package Question.TwoPointers.Q21_pass;
 
 import Question.LinkedList.ListNode;
 import org.junit.Test;

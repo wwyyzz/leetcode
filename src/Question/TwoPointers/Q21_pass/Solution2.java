@@ -9,11 +9,9 @@
  输出：1->1->2->3->4->4
  */
 
-package Question.TwoPointers.Q21_p;
+package Question.TwoPointers.Q21_pass;
 
 import Question.LinkedList.ListNode;
-
-import java.util.ArrayList;
 
 /**
 使用双指针

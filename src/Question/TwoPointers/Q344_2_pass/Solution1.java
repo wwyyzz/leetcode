@@ -16,7 +16,7 @@
  输出：["h","a","n","n","a","H"]
  */
 
-package Question.String.Q344_2;
+package Question.TwoPointers.Q344_2_pass;
 
 
 import java.util.Arrays;
