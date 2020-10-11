@@ -17,12 +17,15 @@
  你能进一步完善解法吗？要求在C++或任何其他语言中不使用任何内置函数（如 C++ 中的 __builtin_popcount）来执行此操作。
  */
 
-package Question.Q338;
+package Question.Q338_pass;
 
 import java.util.Arrays;
 
 /**
-
+ 执行用时：
+ 2 ms, 在所有 Java 提交中击败了75.58%的用户
+ 内存消耗：
+ 42.7 MB, 在所有 Java 提交中击败了53.61%的用户
  */
 public class Solution1 {
     public int[] countBits(int num){

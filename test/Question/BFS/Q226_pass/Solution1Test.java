@@ -1,4 +1,4 @@
-package Question.Tree.Q226_pass;
+package Question.BFS.Q226_pass;
 
 import Question.Tree.TreeNode;
 import org.junit.Test;
