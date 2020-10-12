@@ -18,12 +18,15 @@
  你有办法在时间复杂度为 O(N)，空间复杂度为 O(1) 内完成吗？
  */
 
-package Interview.Q1710_p;
+package Interview.Q1710_pass;
 
 import java.util.HashMap;
 
 /**
-
+ 执行用时：
+ 27 ms, 在所有 Java 提交中击败了5.26%的用户
+ 内存消耗：
+ 44.1 MB, 在所有 Java 提交中击败了15.42%的用户
  */
 public class Solution1 {
     public int majorityElement(int[] nums){

@@ -18,12 +18,15 @@
  链表的第一个节点视为奇数节点，第二个节点视为偶数节点，以此类推。
  */
 
-package Question.LinkedList.Q328;
+package Question.LinkedList.Q328_pass;
 
 import Question.LinkedList.ListNode;
 
 /**
-
+ 执行用时：
+ 1 ms, 在所有 Java 提交中击败了7.52%的用户
+ 内存消耗：
+ 38.5 MB, 在所有 Java 提交中击败了61.80%的用户
  */
 public class Solution1 {
     public ListNode oddEvenList(ListNode head) {
@@ -41,8 +44,6 @@ public class Solution1 {
             if (count % 2 != 0) {
                 node_odd.next = tmp;
                 node_odd = node_odd.next;
-
-
             } else {
                 node_even.next = tmp;
                 node_even = node_even.next;
@@ -51,16 +52,8 @@ public class Solution1 {
             count++;
         }
 
-        System.out.println("odd  :" + odd);
-        System.out.println("even :" + even);
+        node_odd.next = even.next;
 
-        head = odd;
-        while (head != null) {
-            head = head.next;
-        }
-
-        head.next = even;
-
-        return head;
+        return odd.next;
     }
 }

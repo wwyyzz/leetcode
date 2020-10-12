@@ -1,9 +1,7 @@
-package Question.LinkedList.Q328;
+package Question.LinkedList.Q328_pass;
 
 import Question.LinkedList.ListNode;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class Solution1Test {
 
@@ -23,7 +21,7 @@ public class Solution1Test {
         ListNode listNode = new Solution1().oddEvenList(a1);
 
         while (listNode != null) {
-            System.out.println("lisstNode   :" + listNode);
+            System.out.println("lisstNode   :" + listNode.val);
             listNode = listNode.next;
         }
 
