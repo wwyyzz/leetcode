@@ -25,7 +25,7 @@
  0 ≤ N ≤ 30
  */
 
-package Question.Recursion.Q509_p;
+package Question.Recursion.Q509_pass;
 
 /**
  对于 N= 10 :

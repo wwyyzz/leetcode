@@ -25,7 +25,7 @@
  0 ≤ N ≤ 30
  */
 
-package Question.Recursion.Q509_p;
+package Question.Recursion.Q509_pass;
 
 import java.util.HashMap;
 
@@ -42,6 +42,11 @@ import java.util.HashMap;
  对于 N= 10 :
  无记忆化，递归177次
  有记忆化，递归19次
+
+ 执行用时：
+ 0 ms, 在所有 Java 提交中击败了100.00%的用户
+ 内存消耗：
+ 35.3 MB, 在所有 Java 提交中击败了95.96%的用户
  */
 public class Solution2 {
     HashMap<Integer,Integer> map = new HashMap<>();
