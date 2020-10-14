@@ -50,13 +50,11 @@ public class Solution1 {
             for (int i = 0; i < size; i++) {
                 char curr = queue.poll();
                 if (curr != c) {
-
                     queue.offer(c);
                     for (char c1 : Integer.toString(count).toCharArray()) {
                         queue.offer(c1);
                     }
                     count = 0;
-
                 } else {
                     c = curr;
                     count++;

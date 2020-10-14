@@ -24,7 +24,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
-
+ 执行用时：
+ 36 ms, 在所有 Java 提交中击败了5.62%的用户
+ 内存消耗：
+ 39.5 MB, 在所有 Java 提交中击败了9.84%的用户
  */
 public class Solution1 {
     public List<String> commonChars(String[] A){
@@ -41,8 +44,11 @@ public class Solution1 {
 
             }
             if (flag) {
-                result.add("" + c);
-
+                String match = "" + c;
+                result.add(match);
+                for (int i = 1; i < A.length; i++) {
+                    A[i] = A[i].replaceFirst(match, "");
+                }
             }
         }
 

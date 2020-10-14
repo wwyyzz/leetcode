@@ -26,7 +26,7 @@
  K 的范围 [1, 2^(N-1)].
  */
 
-package Question.BFS.Q779_p;
+package Question.Recursion.Q779_p;
 
 import java.util.LinkedList;
 

@@ -20,4 +20,10 @@ public class Solution1Test {
     public void kthGrammar3() {
         assertEquals(0, new Solution1().kthGrammar(2, 1));
     }
+
+    @Test
+    public void kthGrammar4() {
+        assertEquals(0, new Solution1().kthGrammar(30,
+                434991989));
+    }
 }
