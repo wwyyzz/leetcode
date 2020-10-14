@@ -48,7 +48,7 @@ public class Solution1 {
 //
 //        }
 
-        Set<Integer> set = new HashSet();
+        Set<Integer> set = new HashSet<>();
         for (int i = 0; i < nums.length; i++) {
             int num = nums[i];
             set.add(num);

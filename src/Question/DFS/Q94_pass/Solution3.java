@@ -32,7 +32,7 @@ public class Solution3 {
 
         List<Integer> result = new ArrayList<>();
 
-        LinkedList<TreeNode> stack = new LinkedList();
+        LinkedList<TreeNode> stack = new LinkedList<>();
 
         TreeNode cur = root;
 

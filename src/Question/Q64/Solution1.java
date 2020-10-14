@@ -34,7 +34,7 @@ public class Solution1 {
         ArrayList<ArrayList<int[]>> all_paths = new ArrayList<>();
         ArrayList<int[]> path = new ArrayList<>();
 
-        LinkedList<ArrayList<int[]>> queue = new LinkedList();
+        LinkedList<ArrayList<int[]>> queue = new LinkedList<>();
 
         int[] pos = {0,0};
         path.add(pos);

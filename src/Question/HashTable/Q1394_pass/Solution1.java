@@ -62,7 +62,7 @@ public class Solution1 {
         System.out.println(map);
 
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            if (entry.getKey() == entry.getValue()) {
+            if (entry.getKey().equals(entry.getValue())) {
                 if (entry.getValue() > result) {
                     result = entry.getValue();
                 }

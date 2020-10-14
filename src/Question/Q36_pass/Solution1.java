@@ -66,12 +66,12 @@ public class Solution1 {
     }
 
     private Boolean trans_rows_rols(char[][] board){
-        ArrayList<ArrayList> rows = new ArrayList();
-        ArrayList<ArrayList> cols = new ArrayList();
+        ArrayList<ArrayList> rows = new ArrayList<>();
+        ArrayList<ArrayList> cols = new ArrayList<>();
 
         for (int i = 0; i < board.length; i++) {
-            ArrayList row = new ArrayList();
-            ArrayList col = new ArrayList();
+            ArrayList<Character> row = new ArrayList<>();
+            ArrayList<Character> col = new ArrayList<>();
             for (int j = 0; j < board.length; j++) {
 
                 if (board[i][j] != '.') {

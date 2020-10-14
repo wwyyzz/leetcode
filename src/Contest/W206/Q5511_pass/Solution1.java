@@ -17,7 +17,7 @@ import java.util.Arrays;
 public class Solution1 {
     public int numSpecial(int[][] mat){
         int result = 0;
-        ArrayList<int[]> list = new ArrayList();
+        ArrayList<int[]> list = new ArrayList<>();
         for (int i = 0; i < mat.length; i++) {
             for (int j = 0; j < mat[0].length; j++) {
                 if (mat[i][j] == 1) {

@@ -33,8 +33,8 @@ public class Solution1 {
             return false;
         }
 
-        Set set_of_s = new HashSet();
-        Set set_of_t = new HashSet();
+        HashSet set_of_s = new HashSet<>();
+        HashSet set_of_t = new HashSet<>();
 
         for (char c:s.toCharArray()
              ) {

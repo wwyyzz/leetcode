@@ -31,7 +31,7 @@ import java.util.*;
  */
 public class Solution1 {
     public List<List<Integer>> fourSum(int[] nums, int target) {
-        List<List<Integer>> result = new ArrayList();
+        List<List<Integer>> result = new ArrayList<>();
 
         HashSet<List> map = new HashSet<>();
 

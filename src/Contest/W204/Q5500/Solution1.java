@@ -49,8 +49,8 @@ import java.util.LinkedList;
 public class Solution1 {
     public int getMaxLen(int[] nums) {
         int result = 0;
-        LinkedList<Integer> negative = new LinkedList();
-        LinkedList<Integer> positive = new LinkedList();
+        LinkedList<Integer> negative = new LinkedList<>();
+        LinkedList<Integer> positive = new LinkedList<>();
 
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] > 0) {

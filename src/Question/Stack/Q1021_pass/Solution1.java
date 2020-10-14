@@ -56,10 +56,10 @@ public class Solution1 {
 
         StringBuilder result= new StringBuilder();
 
-        LinkedList<Character> stack = new LinkedList();
+        LinkedList<Character> stack = new LinkedList<>();
 
         StringBuilder sb = new StringBuilder();
-        ArrayList<StringBuilder> list = new ArrayList();
+        ArrayList<StringBuilder> list = new ArrayList<>();
         for (char c : S.toCharArray()) {
             if (c == '(') {
                 stack.push(c);

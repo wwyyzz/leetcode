@@ -30,7 +30,7 @@ import java.util.Arrays;
  */
 public class Solution1 {
     public int[] reversePrint(ListNode head){
-        ArrayList<Integer> vals = new ArrayList();
+        ArrayList<Integer> vals = new ArrayList<>();
 
         while (head != null) {
             vals.add(head.val);

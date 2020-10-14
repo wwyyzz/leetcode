@@ -39,7 +39,7 @@ public class Solution1 {
         StringBuilder sb = new StringBuilder();
         sb.append("1");
 
-        LinkedList<Character> queue = new LinkedList();
+        LinkedList<Character> queue = new LinkedList<>();
         queue.offer(sb.charAt(0));
 
         int level = 1;

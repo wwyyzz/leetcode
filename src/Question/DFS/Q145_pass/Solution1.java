@@ -36,7 +36,7 @@ public class Solution1 {
                 return result;
             }
 
-            LinkedList<TreeNode> stack = new LinkedList();
+            LinkedList<TreeNode> stack = new LinkedList<>();
 
             stack.push(root);
 

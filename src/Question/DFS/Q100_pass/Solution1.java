@@ -68,7 +68,7 @@ public class Solution1 {
     private List<Integer> inorderTraversal(TreeNode root){
         List<Integer> result = new ArrayList<>();
 
-        LinkedList<TreeNode> stack = new LinkedList();
+        LinkedList<TreeNode> stack = new LinkedList<>();
 
         TreeNode cur = root;
 

@@ -45,11 +45,10 @@ public class Solution1 {
         while (num != 0) {
             if (num % 2 == 0) {
                 num /= 2;
-                result++;
             }else{
                 num -= 1;
-                result++;
             }
+            result++;
         }
 
         System.out.println(result);
