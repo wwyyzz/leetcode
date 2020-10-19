@@ -22,17 +22,48 @@
  使用递归解题也符合要求，本题中递归程序占用的栈空间不算做额外的空间复杂度。
  */
 
-package Question.BFS.Q116;
+package Question.BFS.Q116_pass;
 import Question.Node;
-/**
 
+import java.util.LinkedList;
+
+/**
+ 执行用时：
+ 3 ms, 在所有 Java 提交中击败了45.62%的用户
+ 内存消耗：
+ 38.5 MB, 在所有 Java 提交中击败了99.39%的用户
  */
 public class Solution1 {
     public Node connect(Node root){
-        Node result = root;
+        if (root == null) {
+            return root;
+        }
+        Node head = root;
 
+        LinkedList<Node> queue = new LinkedList<>();
+        queue.offer(head);
 
-        return result;
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+
+            for (int i = 0; i < size; i++) {
+                Node curr = queue.poll();
+                if (i != size - 1) {
+                    curr.next = queue.peek();
+                } else {
+                    curr.next = null;
+                }
+                if (curr.left != null) {
+                    queue.offer(curr.left);
+                }
+                if (curr.right != null) {
+                    queue.offer(curr.right);
+                }
+
+            }
+        }
+
+        return root;
 
     }
 }

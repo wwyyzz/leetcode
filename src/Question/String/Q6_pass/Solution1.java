@@ -41,7 +41,7 @@ import java.util.LinkedList;
  */
 public class Solution1 {
     public String convert(String s, int numRows){
-        String result = new String();
+        StringBuilder result = new StringBuilder(new String());
         //1、构造numRows个ArrayList
         ArrayList[] list = new ArrayList[numRows];
 
@@ -70,12 +70,12 @@ public class Solution1 {
         //3、生成result字符串返回
         for (int i = 0; i < numRows; i++) {
             for (int j = 0; j < list[i].size(); j++) {
-                result += list[i].get(j);
+                result.append(list[i].get(j));
             }
         }
 
         System.out.println(result);
-        return result;
+        return result.toString();
 
     }
 }

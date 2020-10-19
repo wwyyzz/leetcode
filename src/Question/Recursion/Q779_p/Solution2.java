@@ -28,8 +28,6 @@
 
 package Question.Recursion.Q779_p;
 
-import java.util.LinkedList;
-
 /**
 
  状态：超出时间限制

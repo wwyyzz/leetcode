@@ -30,7 +30,6 @@ import java.util.List;
  */
 public class Solution1 {
     public List<List<Integer>> combine(int n, int k) {
-        List<List<Integer>> result = new ArrayList<>();
 
         LinkedList<List<Integer>> queue = new LinkedList<>();
 
@@ -63,7 +62,7 @@ public class Solution1 {
 
         System.out.println(queue);
 
-        result.addAll(queue);
+        List<List<Integer>> result = new ArrayList<>(queue);
 
         System.out.println(result);
         return result;

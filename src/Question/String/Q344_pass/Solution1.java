@@ -25,12 +25,12 @@ package Question.String.Q344_pass;
  */
 public class Solution1 {
     public String reverseString(String s) {
-        String result ="";
+        StringBuilder result = new StringBuilder();
         for (int i = s.length() -1; i >= 0; i--) {
-            result +=s.charAt(i);
+            result.append(s.charAt(i));
         }
 
 //        System.out.println(result);
-        return result;
+        return result.toString();
     }
 }

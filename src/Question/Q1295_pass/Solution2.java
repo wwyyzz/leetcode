@@ -50,8 +50,6 @@ public class Solution2 {
 
     /**
      * 还不如转字符串快
-     * @param num
-     * @return
      */
     public boolean isEven(int num){
         int digitals = 1;

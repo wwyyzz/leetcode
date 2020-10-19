@@ -25,12 +25,18 @@
 
 package Question.Tree.Q617;
 
+import Question.Tree.TreeNode;
+
 /**
 
  */
 public class Solution1 {
-    {
+    public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
+        TreeNode result = new TreeNode();
 
+
+
+        return result;
 
     }
 }

@@ -22,7 +22,6 @@
 package Question.HashTable.Q242_pass;
 
 import java.util.HashSet;
-import java.util.Set;
 
 /**
  * Solution1 is not right

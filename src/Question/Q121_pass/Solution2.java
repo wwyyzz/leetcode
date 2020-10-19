@@ -19,8 +19,6 @@
 
 package Question.Q121_pass;
 
-import java.util.Arrays;
-
 /**
  优化：
  可以不用maxValues[] 来保存中间结果，直接和max进行比较

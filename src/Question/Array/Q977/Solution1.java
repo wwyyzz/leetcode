@@ -18,7 +18,6 @@
 
 package Question.Array.Q977;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 /**

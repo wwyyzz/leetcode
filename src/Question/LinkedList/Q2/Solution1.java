@@ -17,8 +17,6 @@ package Question.LinkedList.Q2;
 
 import Question.LinkedList.ListNode;
 
-import java.util.LinkedList;
-
 /**
 
  */

@@ -30,7 +30,7 @@
  请选用 C 语言的用户尝试使用 O(1) 额外空间复杂度的原地解法。
  */
 
-package Question.Q151_pass;
+package Question.String.Q151_pass;
 
 import java.util.Arrays;
 
