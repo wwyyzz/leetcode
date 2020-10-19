@@ -54,8 +54,11 @@ public class Solution1 {
             }
         }
 
-        System.out.println(result);
+        String[] result_string = new String[result.size()];
+        for (int i = 0; i < result_string.length; i++) {
+            result_string[i] = result.get(i);
+        }
 
-        return list1;
+        return result_string;
     }
 }
