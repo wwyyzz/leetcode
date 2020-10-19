@@ -49,7 +49,7 @@ import java.util.List;
 public class Solution1 {
     public List<Integer> mostVisited(int n, int[] rounds){
         List<Integer> result = new ArrayList<>();
-        HashMap<Integer,Integer> map = new HashMap();
+        HashMap<Integer,Integer> map = new HashMap<>();
         for (int i = 1; i <= n ; i++) {
             map.put(i,0);
         }

@@ -31,7 +31,7 @@ import java.util.Map;
 public class Solution1 {
     public int longestPalindrome(String s) {
 //        定义HashMap
-        Map<Character, Integer> letters = new HashMap();
+        Map<Character, Integer> letters = new HashMap<>();
 //        遍历字符串
         for (char c:s.toCharArray()
              ) {

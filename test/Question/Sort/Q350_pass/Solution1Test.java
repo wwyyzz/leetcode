@@ -1,4 +1,4 @@
-package Question.Q350_p;
+package Question.Sort.Q350_pass;
 
 import org.junit.Test;
 

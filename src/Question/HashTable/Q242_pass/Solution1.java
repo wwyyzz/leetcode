@@ -22,7 +22,6 @@
 package Question.HashTable.Q242_pass;
 
 import java.util.HashSet;
-import java.util.Set;
 
 /**
  * Solution1 is not right
@@ -33,8 +32,8 @@ public class Solution1 {
             return false;
         }
 
-        Set set_of_s = new HashSet();
-        Set set_of_t = new HashSet();
+        HashSet set_of_s = new HashSet<>();
+        HashSet set_of_t = new HashSet<>();
 
         for (char c:s.toCharArray()
              ) {
@@ -52,10 +51,7 @@ public class Solution1 {
             return false;
         }
 
-        for (Object c:set_of_t
-             ) {
-            set_of_s.add(c);
-        }
+        set_of_s.addAll(set_of_t);
 
         if (size_s == set_of_s.size()){
             return true;

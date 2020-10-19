@@ -23,7 +23,12 @@ package Question.Array.Q75;
 import java.util.Arrays;
 
 /**
+ 执行用时：
+ 1 ms, 在所有 Java 提交中击败了10.55%的用户
+ 内存消耗：
+ 37.1 MB, 在所有 Java 提交中击败了89.39%的用户
 
+ 使用了排序函数，不符合题目要求
  */
 public class Solution1 {
     public void sortColors(int[] nums){

@@ -39,6 +39,7 @@
 
 package Question.Array.Q73_pass;
 
+import java.util.Arrays;
 import java.util.HashSet;
 
 /**
@@ -73,7 +74,7 @@ public class Solution1 {
             }
         }
 
-        System.out.println(matrix);
+        System.out.println(Arrays.deepToString(matrix));
 
     }
 }

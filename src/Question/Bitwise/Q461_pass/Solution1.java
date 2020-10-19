@@ -20,7 +20,7 @@
  上面的箭头指出了对应二进制位不同的位置。
  */
 
-package Question.Bitwise.Q461_p;
+package Question.Bitwise.Q461_pass;
 
 /**
 

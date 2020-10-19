@@ -64,8 +64,8 @@ public class Solution2 {
         int max = 0;
         for (int i = 0; i < arr.length; i++) {
             int bitcount = Integer.bitCount(arr[i]);
-            min = bitcount < min ? bitcount : min;
-            max = bitcount > max ? bitcount : max;
+            min = Math.min(bitcount, min);
+            max = Math.max(bitcount, max);
             bitCounts[i] = bitcount;
         }
 

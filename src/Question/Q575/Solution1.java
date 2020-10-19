@@ -46,7 +46,7 @@ public class Solution1 {
         }
 
         //如果set的数量 >= 数组长度 / 2，则返回数组长度，否则返回set长度
-        return (set.size() >= candies.length / 2) ? (candies.length / 2):(set.size());
+        return Math.min(set.size(), candies.length / 2);
 
 
     }

@@ -51,7 +51,7 @@ public class Solution1 {
         Arrays.sort(candidates);
 
         for (int candidate : candidates) {
-            LinkedList<Integer> tmp = new LinkedList();
+            LinkedList<Integer> tmp = new LinkedList<>();
             tmp.add(candidate);
             queue.add(tmp);
             if (candidate == target) {

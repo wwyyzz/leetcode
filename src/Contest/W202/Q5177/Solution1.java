@@ -6,7 +6,7 @@ import java.util.HashMap;
 public class Solution1 {
     public String reformatDate(String date) {
 
-        HashMap months = new HashMap();
+        HashMap<String, String> months = new HashMap<>();
         months.put("Jan","01");
         months.put("Feb","02");
         months.put("Mar","03");
@@ -20,7 +20,7 @@ public class Solution1 {
         months.put("Nov","11");
         months.put("Dec","12");
 
-        HashMap days = new HashMap();
+        HashMap<String, String>  days = new HashMap<>();
         days.put("1st","01");
         days.put("2nd","02");
         days.put("3rd","03");
@@ -59,8 +59,8 @@ public class Solution1 {
         String[] s = date.split(" ");
 
         String year = s[2];
-        String month = (String) months.get(s[1]);
-        String day = (String) days.get(s[0]);
+        String month = months.get(s[1]);
+        String day = days.get(s[0]);
 
         System.out.println(Arrays.toString(s));
 

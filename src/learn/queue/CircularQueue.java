@@ -1,9 +1,5 @@
 package learn.queue;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-
 class CircularQueue {
 
     private int[] data;

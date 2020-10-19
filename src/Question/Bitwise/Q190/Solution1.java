@@ -23,6 +23,7 @@ package Question.Bitwise.Q190;
 public class Solution1 {
     // you need treat n as an unsigned value
     public int reverseBits(int n) {
+        System.out.println(Integer.parseInt("001110010111100000101001010000000", 2));
 
 //        将 n 转为binaryString
 //        再反转binaryString
@@ -30,18 +31,19 @@ public class Solution1 {
 
 //        将反转后的字符串转为Int返回
 
-        for (int i = sb.length(); i <= 32; i++) {
+        for (int i = sb.length(); i < 32; i++) {
             sb.insert(0,'0');
 
         }
-        System.out.println(sb);
+        System.out.println("Sb         =" + sb);
 
         StringBuilder sb_reverse = sb.reverse();
-        sb_reverse.trimToSize();
-        System.out.println(sb_reverse);
+//        sb_reverse.trimToSize();
+        System.out.println("sb_reverse =" + sb_reverse);
 
+        int reverse = Integer.parseInt(sb_reverse.toString(), 2);
         System.out.println(Integer.parseInt(sb_reverse.toString(), 2));
-        return Integer.parseInt(sb.reverse().toString(), 2);
+        return Integer.parseInt(sb_reverse.toString(), 2);
 
     }
 }

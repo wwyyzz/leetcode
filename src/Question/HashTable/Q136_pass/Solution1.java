@@ -33,9 +33,9 @@ public class Solution1 {
             list1.add(i);
         }
 
-        Set<Integer> set = new HashSet(list1);
+        Set<Integer> set = new HashSet<>(list1);
 
-        ArrayList<Integer> list2 = new ArrayList(set);
+        ArrayList<Integer> list2 = new ArrayList<>(set);
 
         for (Integer i:list2
         ) {

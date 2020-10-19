@@ -99,7 +99,7 @@ public class Solution1 {
         System.out.println(list);
 
         //lambda
-        Collections.sort(list, (o1, o2) -> o1.getValue().compareTo(o2.getValue()));
+        list.sort((o1, o2) -> o1.getValue().compareTo(o2.getValue()));
 
 //        Collections.sort(list, new Comparator<Map.Entry<Integer, Integer>>() {
 //            @Override

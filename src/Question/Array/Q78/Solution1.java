@@ -31,7 +31,7 @@ public class Solution1 {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
 
-        LinkedList<List<Integer>> queue = new LinkedList();
+        LinkedList<List<Integer>> queue = new LinkedList<>();
 
         for (int i = 0; i <= nums.length ; i++) {
             ArrayList num = new ArrayList();
@@ -64,9 +64,7 @@ public class Solution1 {
 
         System.out.println(queue);
 
-        for (List<Integer> list : queue) {
-            result.add(list);
-        }
+        result.addAll(queue);
 
         System.out.println(result);
         return result;

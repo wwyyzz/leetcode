@@ -37,7 +37,7 @@ public class Solution1 {
         LinkedList<ArrayList> queue = new LinkedList<>();
 
         for (int i = 1; i < 10 ; i++) {
-            ArrayList<Integer> tmp = new ArrayList();
+            ArrayList<Integer> tmp = new ArrayList<>();
             tmp.add(i);
             queue.add(tmp);
         }

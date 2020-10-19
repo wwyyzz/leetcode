@@ -16,7 +16,7 @@ public class Solution1 {
         int a = max - nums[3];
         int b = nums[nums.length - 4];
 
-        return a > b ? b : a;
+        return Math.min(a, b);
 
     }
 }

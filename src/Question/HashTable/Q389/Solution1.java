@@ -41,7 +41,7 @@ public class Solution1 {
             s2.remove(c);
         }
 
-        List<Character> list = new ArrayList(s2);
+        List<Character> list = new ArrayList<>(s2);
 
 
         return list.get(0);

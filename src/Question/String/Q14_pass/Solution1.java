@@ -27,8 +27,7 @@ public class Solution1 {
     public String longestCommonPrefix(String[] strs) {
 
         StringBuilder sb = new StringBuilder("");
-        ArrayList<Integer> lens;
-        lens = new ArrayList();
+        ArrayList<Integer> lens = new ArrayList<>();
 
         for (String s:strs
              ) {
