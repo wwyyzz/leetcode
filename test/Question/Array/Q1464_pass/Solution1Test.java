@@ -1,4 +1,4 @@
-package Question.Array.Q1464_p;
+package Question.Array.Q1464_pass;
 
 import org.junit.Test;
 

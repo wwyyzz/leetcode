@@ -21,21 +21,35 @@
 
 package Question.HashTable.Q3;
 
+import java.util.HashSet;
+
 /**
 
  */
-public class Solution1 {
+public class Solution2 {
     public int lengthOfLongestSubstring(String s){
-        int result = 0;
+        int result = 1;
 
-        for (int i = 0; i < s.length() - 1; i++) {
-            for (int j = i + 1; j < s.length(); j++) {
-                String sub = s.substring(i, j);
+        for (int i = s.length(); i > 0 ; i--) {
+            for (int j = 0; j < s.length() - i; j++) {
+                String sub = s.substring(j, j + i + 1);
                 System.out.println("sub  :" + sub);
+                if (!isRepeat(sub)) {
+                    return sub.length();
+                }
             }
         }
 
         return result;
 
+    }
+
+    private boolean isRepeat(String s) {
+        HashSet<Character> set = new HashSet<>();
+        for (char c : s.toCharArray()) {
+            set.add(c);
+        }
+
+        return set.size() != s.length();
     }
 }

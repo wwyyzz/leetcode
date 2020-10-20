@@ -28,13 +28,16 @@
  矩阵中的所有元素都是不同的
  */
 
-package Question.Array.Q1380_p;
+package Question.Array.Q1380_pass;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
-
+ 执行用时：
+ 4 ms, 在所有 Java 提交中击败了26.24%的用户
+ 内存消耗：
+ 38.7 MB, 在所有 Java 提交中击败了100.00%的用户
  */
 public class Solution1 {
     public List<Integer> luckyNumbers (int[][] matrix) {

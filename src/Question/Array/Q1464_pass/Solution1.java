@@ -23,10 +23,13 @@
  1 <= nums[i] <= 10^3
  */
 
-package Question.Array.Q1464_p;
+package Question.Array.Q1464_pass;
 
 /**
-
+ 执行用时：
+ 5 ms, 在所有 Java 提交中击败了17.22%的用户
+ 内存消耗：
+ 38.1 MB, 在所有 Java 提交中击败了96.50%的用户
  */
 public class Solution1 {
     public int maxProduct(int[] nums){
