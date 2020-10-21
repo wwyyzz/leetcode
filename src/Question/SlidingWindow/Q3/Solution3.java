@@ -19,10 +19,9 @@
  请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
  */
 
-package Question.HashTable.Q3;
+package Question.SlidingWindow.Q3;
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 /**
  这道题主要用到思路是：滑动窗口
@@ -36,22 +35,24 @@ import java.util.HashSet;
  */
 public class Solution3 {
     public int lengthOfLongestSubstring(String s){
-        int result = 1;
-
         HashMap<Character, Integer> map = new HashMap<>();
 
         int max = 0;
         int L = 0;
-        int R = 0;
+        int R;
         for (int i = 0; i < s.length(); i++) {
             R = i;
             if (map.containsKey(s.charAt(i))) {
-
+                L = Math.max(L, map.get(s.charAt(i)) + 1);
+            }
+            map.put(s.charAt(i), i);
+            if ((R - L + 1) > max) {
+                max = R - L + 1;
             }
         }
 
 
-        return result;
+        return max;
 
     }
 

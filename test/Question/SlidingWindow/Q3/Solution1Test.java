@@ -1,4 +1,4 @@
-package Question.HashTable.Q3;
+package Question.SlidingWindow.Q3;
 
 import org.junit.Test;
 
