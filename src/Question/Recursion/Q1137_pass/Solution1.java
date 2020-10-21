@@ -21,12 +21,15 @@
  答案保证是一个 32 位整数，即 answer <= 2^31 - 1。
  */
 
-package Question.Recursion.Q1137_p;
+package Question.Recursion.Q1137_pass;
 
 import java.util.HashMap;
 
 /**
-
+ 执行用时：
+ 0 ms, 在所有 Java 提交中击败了100.00%的用户
+ 内存消耗：
+ 35.2 MB, 在所有 Java 提交中击败了91.45%的用户
  */
 public class Solution1 {
     HashMap<Integer,Integer> map = new HashMap<>();

@@ -37,12 +37,15 @@
  题目数据保证括号表达式 s 是 有效的括号表达式
  */
 
-package Question.Stack.Q1614_p;
+package Question.Stack.Q1614_pass;
 
 import java.util.LinkedList;
 
 /**
-
+ 执行用时：
+ 1 ms, 在所有 Java 提交中击败了89.17%的用户
+ 内存消耗：
+ 36.3 MB, 在所有 Java 提交中击败了97.29%的用户
  */
 public class Solution1 {
     public int maxDepth(String s) {

@@ -1,4 +1,4 @@
-package Question.Stack.Q1614_p;
+package Question.Stack.Q1614_pass;
 
 import org.junit.Test;
 

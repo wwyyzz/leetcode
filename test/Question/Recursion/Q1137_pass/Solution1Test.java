@@ -1,4 +1,4 @@
-package Question.Recursion.Q1137_p;
+package Question.Recursion.Q1137_pass;
 
 import org.junit.Test;
 
