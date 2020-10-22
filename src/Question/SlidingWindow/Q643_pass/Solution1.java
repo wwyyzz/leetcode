@@ -12,24 +12,20 @@
  所给数据范围 [-10,000，10,000]。
  */
 
-package Question.SlidingWindow.Q643_p;
+package Question.SlidingWindow.Q643_pass;
 
 /**
 
  */
-public class Solution2 {
+public class Solution1 {
     public double findMaxAverage(int[] nums, int k){
         int result = 0;
 
-        int sum = 0;
-        for (int i = 0; i < k; i++) {
-            sum += nums[i];
-        }
-
-        result = sum;
-
-        for (int i = k; i < nums.length ; i++) {
-            sum = sum - nums[i -k] + nums[i];
+        for (int i = 0; i < nums.length - k; i++) {
+            int sum = 0;
+            for (int j = 0; j < k; j++) {
+                sum += nums[i + j];
+            }
 
             if (sum > result) {
                 result = sum;
