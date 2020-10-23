@@ -1,4 +1,4 @@
-package Question.Array.Q56;
+package Question.Array.Q56_p;
 
 import org.junit.Test;
 

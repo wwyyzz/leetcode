@@ -28,23 +28,18 @@ public class Solution1 {
 
     for (int i = 1; i <= 3; i++) {
         for (int j = i + 1; j <= i + 3; j++) {
-            for (int k = j + 1; (k < j + 3) && k < s.length() ; k++) {
+            for (int k = j + 1; (k <= j + 3) && k < s.length()  ; k++) {
                 StringBuilder ip = new StringBuilder(sb);
                 ip.insert(k,'.');
                 ip.insert(j, '.');
                 ip.insert(i, '.');
-                System.out.println(ip);
+//                System.out.println(ip);
                 String[] split = ip.toString().split("\\.");
                 System.out.println(Arrays.toString(split));
 
-                if (    Integer.valueOf(split[3]) <= 255 &&
-                        Integer.valueOf(split[2]) <= 255 &&
-                        Integer.valueOf(split[1]) <= 255 &&
-                        Integer.valueOf(split[0]) <= 255 ){
+                if (isValid(split)){
                     result.add(ip.toString());
                 }
-
-
             }
         }
     }
@@ -52,5 +47,29 @@ public class Solution1 {
         System.out.println(result);
 
     return result;
+    }
+
+    private boolean isValid(String[] strings) {
+        boolean valid = false;
+
+        boolean valid1 = false;
+        if (Integer.valueOf(strings[3]) <= 255 &&
+                Integer.valueOf(strings[2]) <= 255 &&
+                Integer.valueOf(strings[1]) <= 255 &&
+                Integer.valueOf(strings[0]) <= 255) {
+            valid1 = true;
+        }
+
+        boolean valid2 = true;
+        if ((strings[0].length() > 1 && strings[0].charAt(0) == '0') ||
+                (strings[1].length() > 1 && strings[1].charAt(0) == '0')||
+                (strings[2].length() > 1 && strings[2].charAt(0) == '0')||
+                (strings[3].length() > 1 && strings[3].charAt(0) == '0')
+
+        ) {
+            valid2 =false;
+        }
+
+        return valid1 && valid2;
     }
 }

@@ -1,4 +1,4 @@
-package Interview.Q1704_p;
+package Interview.Q1704_pass;
 
 import org.junit.Test;
 

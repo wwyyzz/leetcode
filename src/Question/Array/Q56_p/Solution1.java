@@ -14,7 +14,7 @@
  注意：输入类型已于2019年4月15日更改。 请重置默认代码定义以获取新方法签名。
  */
 
-package Question.Array.Q56;
+package Question.Array.Q56_p;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -24,7 +24,9 @@ import java.util.Arrays;
  */
 public class Solution1 {
     public int[][] merge(int[][] intervals){
-//        int[][] result = new int[2][2];
+        if (intervals.length == 0) {
+            return new int[][]{};
+        }
 
         ArrayList<int[]> list = new ArrayList<>();
         list.add(intervals[0]);
@@ -40,6 +42,7 @@ public class Solution1 {
                     int[] new_interval = new int[]
                             {Math.min(interval[0],list.get(j)[0]), Math.max(interval[1],list.get(j)[1])};
                     list.set(j,new_interval);
+                    flag = false;
                 }
             }
 
@@ -57,6 +60,8 @@ public class Solution1 {
         }
 
         System.out.println("result   :" + Arrays.toString(result[0]));
+        System.out.println("result   :" + Arrays.toString(result[1]));
+        System.out.println("result   :" + Arrays.toString(result[2]));
         return result;
 
     }

@@ -13,23 +13,20 @@
  输出：8
  */
 
-package Interview.Q1704_p;
+package Interview.Q1704_pass;
 
 /**
-
+ 执行用时：
+ 0 ms, 在所有 Java 提交中击败了100.00%的用户
+ 内存消耗：
+ 38.9 MB, 在所有 Java 提交中击败了89.30%的用户
  */
 public class Solution1 {
     public int missingNumber(int[] nums) {
-
-
         int result = (1 + nums.length) * nums.length / 2;
-
         for (int num : nums) {
             result -= num;
         }
-
-
         return result;
-
     }
 }
