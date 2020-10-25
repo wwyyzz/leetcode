@@ -51,6 +51,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="/tmp/leetcode/editor/cn/[1074]元素和为目标值的子矩阵数量.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="/tmp/leetcode/editor/cn/[1074]元素和为目标值的子矩阵数量.java" />
+              <option name="questionId" value="1145" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/tmp/leetcode/editor/cn/[107]二叉树的层次遍历 II.java">
           <value>
             <LeetcodeEditor>
@@ -520,6 +528,14 @@
             <LeetcodeEditor>
               <option name="path" value="/tmp/leetcode/editor/cn/[88]合并两个有序数组.java" />
               <option name="questionId" value="88" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[892]三维形体的表面积.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="/tmp/leetcode/editor/cn/[892]三维形体的表面积.java" />
+              <option name="questionId" value="928" />
             </LeetcodeEditor>
           </value>
         </entry>
