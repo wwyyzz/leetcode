@@ -1,4 +1,4 @@
-package Question.Array.Q78;
+package Question.BFS.Q78_pass;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

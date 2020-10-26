@@ -1,4 +1,4 @@
-package Question.Array.Q78;
+package Question.BFS.Q78_pass;
 
 import org.junit.Test;
 

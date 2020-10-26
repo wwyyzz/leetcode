@@ -1,8 +1,6 @@
-package Question.Array.Q78;
+package Question.BFS.Q78_pass;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class Solution2Test {
 

@@ -30,8 +30,6 @@ public class Solution2 {
 
         Arrays.sort(intervals, (o1, o2) -> o1[0] - o2[0]);
 
-        System.out.println(intervals);
-
         ArrayList<int[]> lists = new ArrayList<>();
 
         int L = intervals[0][0];

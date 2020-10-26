@@ -36,7 +36,7 @@ import java.util.LinkedList;
 public class Solution1 {
     public Node connect(Node root){
         if (root == null) {
-            return root;
+            return null;
         }
         Node head = root;
 
