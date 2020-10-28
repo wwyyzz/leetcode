@@ -14,12 +14,15 @@
  你可以假设 k 总是有效的，且 1 ≤ k ≤ 数组的长度。
  */
 
-package Question.Array.Q215_p;
+package Question.Array.Q215_pass;
 
 import java.util.Arrays;
 
 /**
-
+ 执行用时：
+ 2 ms, 在所有 Java 提交中击败了90.59%的用户
+ 内存消耗：
+ 38.8 MB, 在所有 Java 提交中击败了89.97%的用户
  */
 public class Solution1 {
     public int findKthLargest(int[] nums, int k){

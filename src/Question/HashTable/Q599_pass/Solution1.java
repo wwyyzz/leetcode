@@ -24,19 +24,19 @@
  两个列表都没有重复的元素。
  */
 
-package Question.HashTable.Q599_p;
+package Question.HashTable.Q599_pass;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
-
+ 执行用时：
+ 133 ms, 在所有 Java 提交中击败了7.39%的用户
+ 内存消耗：
+ 39.3 MB, 在所有 Java 提交中击败了72.49%的用户
  */
 public class Solution1 {
     public String[] findRestaurant(String[] list1, String[] list2){
         ArrayList<String> result = new ArrayList<>();
-
-        HashMap<String, Integer> map = new HashMap<>();
 
         int min = Integer.MAX_VALUE;
 

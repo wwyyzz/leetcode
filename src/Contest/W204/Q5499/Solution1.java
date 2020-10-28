@@ -66,11 +66,8 @@ public class Solution1 {
                 s = Arrays.toString(mod);
                 System.out.println("mod   :" + s);
 
-                if ( map.containsKey(s)) {
-                    map.put(s, map.get(s) + 1);
-                } else {
-                    map.put(s, 1);
-                }
+                map.put(s, map.getOrDefault(s, 1) + 1);
+
                 System.out.println("map  :" + map);
                 System.out.println(map.get(s).toString());
             }

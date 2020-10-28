@@ -1,4 +1,4 @@
-package Question.HashTable.Q599_p;
+package Question.HashTable.Q599_pass;
 
 import org.junit.Test;
 
