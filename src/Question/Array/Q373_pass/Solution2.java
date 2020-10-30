@@ -24,15 +24,19 @@
  解释: 也可能序列中所有的数对都被返回:[1,3],[2,3]
  */
 
-package Question.Array.Q373;
+package Question.Array.Q373_pass;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
+ 执行用时：
+ 236 ms, 在所有 Java 提交中击败了10.47%的用户
+ 内存消耗：
+ 144.9 MB, 在所有 Java 提交中击败了5.13%
+ 的用户
 
  */
-public class Solution1 {
+public class Solution2 {
     public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
         List<List<Integer>> result = new ArrayList<>();
         List<List<Integer>> u_v = new ArrayList<>();
@@ -48,24 +52,27 @@ public class Solution1 {
             }
         }
 
-        System.out.println(sum);
-
-        while (k > 0 && sum.size() > 0) {
-            int min = Integer.MAX_VALUE;
-            int idx = 0;
-            for (int i = 0; i < sum.size(); i++) {
-                if (sum.get(i) < min) {
-                    min = sum.get(i);
-                    idx = i;
-                }
-            }
-            result.add(u_v.get(idx));
-            u_v.remove(idx);
-            sum.remove(idx);
-            k--;
+        if (k > sum.size()) {
+            return u_v;
+        }
+//        System.out.println(sum);
+//        这一段的效率太低，需要优化
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < sum.size(); i++) {
+            map.put(i, sum.get(i));
         }
 
-        System.out.println(result);
+        List<Map.Entry<Integer,Integer>> list = new ArrayList<>(map.entrySet());
+
+        list.sort(Comparator.comparing(Map.Entry::getValue));
+
+
+        for (int i = 0; i < k; i++) {
+            result.add(u_v.get(list.get(i).getKey()));
+        }
+
+
+//        System.out.println(result);
         return result;
 
     }

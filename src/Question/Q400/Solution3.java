@@ -1,13 +1,6 @@
 package Question.Q400;
 
 /**
- * @program: leetcode
- * @description: Question.Q400
- * @author: Jun Wang
- * @create: 2018-12-17 15:37
- */
-
-/**
  * 400. 第N个数字
  * 在无限的整数序列 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...中找到第 n 个数字。
  *
