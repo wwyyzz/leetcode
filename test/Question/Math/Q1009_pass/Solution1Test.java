@@ -1,4 +1,4 @@
-package Question.Math.Q1009_p;
+package Question.Math.Q1009_pass;
 
 import org.junit.Test;
 

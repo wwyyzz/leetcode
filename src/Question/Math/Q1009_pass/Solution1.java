@@ -26,10 +26,13 @@
  本题与 476：https://leetcode-cn.com/problems/number-complement/ 相同
  */
 
-package Question.Math.Q1009_p;
+package Question.Math.Q1009_pass;
 
 /**
-
+ 执行用时：
+ 1 ms, 在所有 Java 提交中击败了32.32%的用户
+ 内存消耗：
+ 34.9 MB, 在所有 Java 提交中击败了98.77%的用户
  */
 public class Solution1 {
     public int bitwiseComplement(int N){
