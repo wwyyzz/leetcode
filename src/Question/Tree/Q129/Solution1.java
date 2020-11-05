@@ -36,12 +36,17 @@
 
 package Question.Tree.Q129;
 
+import Question.Tree.TreeNode;
+
 /**
 
  */
 public class Solution1 {
-    {
+    public int sumNumbers(TreeNode root){
+        int result = 0;
 
+
+        return result;
 
     }
 }
