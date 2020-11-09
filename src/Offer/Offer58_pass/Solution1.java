@@ -15,17 +15,22 @@
  1 <= k < s.length <= 10000
  */
 
-package Offer.Offer58_p;
+package Offer.Offer58_pass;
 
 /**
 
  */
-public class Solution2 {
+public class Solution1 {
     public String reverseLeftWords(String s, int n){
 
-        s = s.substring(n) + s.substring(0,n);
-        System.out.println(s);
-        return s;
+        StringBuilder sb = new StringBuilder(s);
+        for (int i = 0; i < n; i++) {
+            sb.append(sb.charAt(0));
+            sb.deleteCharAt(0);
+        }
+
+        System.out.println(sb.toString());
+        return sb.toString();
 
     }
 }

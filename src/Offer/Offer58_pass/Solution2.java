@@ -15,22 +15,20 @@
  1 <= k < s.length <= 10000
  */
 
-package Offer.Offer58_p;
+package Offer.Offer58_pass;
 
 /**
-
+ 执行用时：
+ 0 ms, 在所有 Java 提交中击败了100.00%的用户
+ 内存消耗：
+ 38.2 MB, 在所有 Java 提交中击败了90.20%的用户
  */
-public class Solution1 {
+public class Solution2 {
     public String reverseLeftWords(String s, int n){
 
-        StringBuilder sb = new StringBuilder(s);
-        for (int i = 0; i < n; i++) {
-            sb.append(sb.charAt(0));
-            sb.deleteCharAt(0);
-        }
-
-        System.out.println(sb.toString());
-        return sb.toString();
+        s = s.substring(n) + s.substring(0,n);
+        System.out.println(s);
+        return s;
 
     }
 }
