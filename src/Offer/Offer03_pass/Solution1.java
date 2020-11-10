@@ -1,4 +1,4 @@
-package Offer.Offer03;
+package Offer.Offer03_pass;
 
 /**
  剑指 Offer 03. 数组中重复的数字

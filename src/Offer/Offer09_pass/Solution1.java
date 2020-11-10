@@ -20,7 +20,7 @@
  最多会对 appendTail、deleteHead 进行 10000 次调用
  */
 
-package Offer.Offer09;
+package Offer.Offer09_pass;
 
 import java.util.LinkedList;
 

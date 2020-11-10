@@ -15,12 +15,15 @@
  1 <= nums[i] < 2^31
  */
 
-package Offer.Offer56_II_p;
+package Offer.Offer56_II_pass;
 
 import java.util.Arrays;
 
 /**
-
+ 执行用时：
+ 7 ms, 在所有 Java 提交中击败了68.34%的用户
+ 内存消耗：
+ 39.2 MB, 在所有 Java 提交中击败了94.59%的用户
  */
 public class Solution2 {
     public int singleNumber(int[] nums){

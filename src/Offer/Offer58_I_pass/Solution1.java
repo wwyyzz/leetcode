@@ -26,10 +26,13 @@
  注意：此题对比原题有改动
  */
 
-package Offer.Offer58_I_p;
+package Offer.Offer58_I_pass;
 
 /**
-
+ 执行用时：
+ 7 ms, 在所有 Java 提交中击败了23.15%的用户
+ 内存消耗：
+ 38.4 MB, 在所有 Java 提交中击败了90.00%的用户
  */
 public class Solution1 {
     public String reverseWords(String s){

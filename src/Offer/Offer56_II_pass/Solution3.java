@@ -15,10 +15,7 @@
  1 <= nums[i] < 2^31
  */
 
-package Offer.Offer56_II_p;
-
-import java.util.Arrays;
-import java.util.BitSet;
+package Offer.Offer56_II_pass;
 
 /**
 

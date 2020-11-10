@@ -15,7 +15,7 @@
  1 <= nums[i] < 2^31
  */
 
-package Offer.Offer56_II_p;
+package Offer.Offer56_II_pass;
 
 import java.util.HashMap;
 import java.util.Map;
