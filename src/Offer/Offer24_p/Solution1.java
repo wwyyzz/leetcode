@@ -40,8 +40,7 @@ public class Solution1 {
         System.out.println(stack);
         nodes = head;
         while (nodes != null) {
-            Integer v = stack.pop();
-            nodes.val = v;
+            nodes.val = stack.pop();
             nodes = nodes.next;
         }
 

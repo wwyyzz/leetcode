@@ -2,8 +2,6 @@ package Question.Array.Q75;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class Solution3Test {
 
     @Test

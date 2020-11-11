@@ -38,11 +38,11 @@ public class Solution1 {
         int cols = matrix[0].length;
 
 
-        for (int i = 0; i < rows ; i++) {
+        for (int[] ints : matrix) {
             // System.out.println(matrix[i][cols - 1]);
-            if ((matrix[i][cols - 1]) >= target){
+            if ((ints[cols - 1]) >= target) {
                 for (int j = 0; j < cols; j++) {
-                    if (target == matrix[i][j]){
+                    if (target == ints[j]) {
                         result = true;
                         return result;
                     }

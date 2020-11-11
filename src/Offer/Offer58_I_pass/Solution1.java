@@ -37,7 +37,7 @@ package Offer.Offer58_I_pass;
 public class Solution1 {
     public String reverseWords(String s){
 
-        StringBuffer result = new StringBuffer();
+        StringBuilder result = new StringBuilder();
 
         s = s.trim();
         String[] array_s = s.split("\\s+");

@@ -28,8 +28,8 @@ import java.util.LinkedList;
 
  */
 public class Solution1 {
-    LinkedList<Integer> stack_a;
-    LinkedList<Integer> stack_b;
+    final LinkedList<Integer> stack_a;
+    final LinkedList<Integer> stack_b;
 
     public Solution1() {
         stack_a = new LinkedList<>();

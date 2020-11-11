@@ -25,7 +25,7 @@ public class Solution1 {
     public int[] constructArr(int[] a){
         int[] result = new int[a.length];
 
-        int multi = 1;
+        int multi;
 
 
         for (int i = 0; i < a.length; i++) {

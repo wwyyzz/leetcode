@@ -26,7 +26,7 @@ import java.util.Arrays;
 
  */
 public class Solution3 {
-    ArrayList<Integer> vals = new ArrayList();
+    ArrayList<Integer> vals = new ArrayList<>();
     public int[] reversePrint(ListNode head){
         recur(head);
         int[] result = new int[vals.size()];

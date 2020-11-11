@@ -16,8 +16,6 @@
 
 package Offer.Offer39_pass;
 
-import java.util.HashMap;
-
 /**
  执行用时：
  24 ms, 在所有 Java 提交中击败了6.37%的用户

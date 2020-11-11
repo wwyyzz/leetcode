@@ -43,8 +43,7 @@ public class Solution1 {
         // System.out.println(list);
         ListNode head = result;
         for (Integer integer : list) {
-            ListNode node = new ListNode(integer);
-            head.next = node;
+            head.next = new ListNode(integer);
             head = head.next;
         }
 

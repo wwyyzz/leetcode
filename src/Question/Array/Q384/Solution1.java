@@ -19,8 +19,6 @@
 
 package Question.Array.Q384;
 
-import java.util.Arrays;
-
 /**
 
  */

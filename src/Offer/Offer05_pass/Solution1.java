@@ -20,7 +20,7 @@ package Offer.Offer05_pass;
  */
 public class Solution1 {
     public String replaceSpace(String s){
-        String result = "";
+        String result;
         result = s.replace(" ", "%20");
 
         System.out.println(result);
