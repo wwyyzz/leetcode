@@ -17,10 +17,13 @@
  字符串如果不是 "0" ，就都不含前导零。
  */
 
-package Question.Q67_p;
+package Question.Q67_pass;
 
 /**
-
+ 执行用时：
+ 2 ms, 在所有 Java 提交中击败了98.94%的用户
+ 内存消耗：
+ 38.4 MB, 在所有 Java 提交中击败了32.90%的用户
  */
 public class Solution1 {
     public String addBinary(String a, String b) {

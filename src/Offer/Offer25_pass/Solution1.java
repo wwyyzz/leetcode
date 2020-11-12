@@ -13,14 +13,17 @@
  注意：本题与主站 21 题相同：https://leetcode-cn.com/problems/merge-two-sorted-lists/
  */
 
-package Offer.Offer25_p;
+package Offer.Offer25_pass;
 
 import Offer.ListNode;
 
 import java.util.ArrayList;
 
 /**
-
+ 执行用时：
+ 6 ms, 在所有 Java 提交中击败了98.92%的用户
+ 内存消耗：
+ 38.7 MB, 在所有 Java 提交中击败了78.56%的用户
  */
 public class Solution1 {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2){

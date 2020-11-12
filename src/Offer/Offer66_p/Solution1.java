@@ -19,7 +19,10 @@ package Offer.Offer66_p;
 import java.util.Arrays;
 
 /**
-
+ 执行用时：
+ 1 ms, 在所有 Java 提交中击败了8.50%的用户
+ 内存消耗：
+ 38.4 MB, 在所有 Java 提交中击败了67.47%的用户
  */
 public class Solution1 {
     public int[] constructArr(int[] a){

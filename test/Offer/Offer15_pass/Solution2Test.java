@@ -1,4 +1,4 @@
-package Offer.Offer191_p;
+package Offer.Offer15_pass;
 
 import org.junit.Test;
 

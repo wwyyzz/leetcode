@@ -1,4 +1,4 @@
-package Question.Q67_p;
+package Question.Q67_pass;
 
 import org.junit.Test;
 
