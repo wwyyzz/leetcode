@@ -1,4 +1,4 @@
-package Question.String.Q93;
+package Question.String.Q93_pass;
 
 import org.junit.Test;
 
@@ -44,6 +44,16 @@ public class Solution1Test {
     @Test
     public void restoreIpAddresses5() {
         new Solution1().restoreIpAddresses("101023");
+    }
+
+    @Test
+    public void restoreIpAddresses6() {
+        new Solution1().restoreIpAddresses("0279245587303");
+    }
+
+    @Test
+    public void restoreIpAddresses7() {
+        new Solution1().restoreIpAddresses("25525511135");
     }
 
     private void assertArrayEquals(ArrayList<String> result1, List<String> restoreIpAddresses) {

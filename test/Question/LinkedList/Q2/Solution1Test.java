@@ -25,7 +25,28 @@ public class Solution1Test {
         ListNode result = new Solution1().addTwoNumbers(l1_1, l2_1);
 
         while (result != null) {
-            System.out.println(result.val);
+            System.out.print(result.val);
+            result = result.next;
+        }
+    }
+
+    @Test
+    public void addTwoNumbers2() {
+        ListNode l1_1 = new ListNode(2);
+        ListNode l1_2 = new ListNode(4);
+        l1_1.next = l1_2;
+
+        ListNode l2_1 = new ListNode(5);
+        ListNode l2_2 = new ListNode(6);
+        ListNode l2_3 = new ListNode(4);
+        l2_1.next = l2_2;
+        l2_2.next = l2_3;
+
+
+        ListNode result = new Solution1().addTwoNumbers(l1_1, l2_1);
+
+        while (result != null) {
+            System.out.print(result.val);
             result = result.next;
         }
     }
