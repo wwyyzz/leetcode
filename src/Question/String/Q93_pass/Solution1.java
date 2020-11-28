@@ -9,7 +9,7 @@
  输出: ["255.255.11.135", "255.255.111.35"]
  */
 
-package Question.String.Q93;
+package Question.String.Q93_pass;
 
 
 import java.util.ArrayList;
@@ -17,7 +17,10 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
-
+ 执行用时：
+ 4 ms, 在所有 Java 提交中击败了46.06%的用户
+ 内存消耗：
+ 38.5 MB, 在所有 Java 提交中击败了70.45%的用户
  */
 public class Solution1 {
     public List<String> restoreIpAddresses(String s) {
@@ -50,14 +53,12 @@ public class Solution1 {
     }
 
     private boolean isValid(String[] strings) {
-        boolean valid = false;
-
-        boolean valid1 = false;
-        if (Integer.valueOf(strings[3]) <= 255 &&
-                Integer.valueOf(strings[2]) <= 255 &&
-                Integer.valueOf(strings[1]) <= 255 &&
-                Integer.valueOf(strings[0]) <= 255) {
-            valid1 = true;
+        boolean valid1 = true;
+        if (strings[3].length() > 3 || Integer.parseInt(strings[3]) > 255 ||
+                Integer.parseInt(strings[2]) > 255 ||
+                Integer.parseInt(strings[1]) > 255 ||
+                Integer.parseInt(strings[0]) > 255) {
+            valid1 = false;
         }
 
         boolean valid2 = true;
@@ -65,7 +66,6 @@ public class Solution1 {
                 (strings[1].length() > 1 && strings[1].charAt(0) == '0')||
                 (strings[2].length() > 1 && strings[2].charAt(0) == '0')||
                 (strings[3].length() > 1 && strings[3].charAt(0) == '0')
-
         ) {
             valid2 =false;
         }

@@ -15,4 +15,9 @@ public class Solution1Test {
     public void integerReplacement2() {
         assertEquals(4, new Solution1().integerReplacement(7));
     }
+
+    @Test
+    public void integerReplacement3() {
+        assertEquals(17, new Solution1().integerReplacement(65535));
+    }
 }

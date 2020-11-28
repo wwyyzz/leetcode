@@ -13,19 +13,20 @@
  0 <= s 的长度 <= 50000
  */
 
-package Offer.Offer50;
+package Offer.Offer50_pass;
 
 /**
-
+ 执行用时：
+ 33 ms, 在所有 Java 提交中击败了31.00%的用户
+ 内存消耗：
+ 38.6 MB, 在所有 Java 提交中击败了96.67%的用户
  */
 public class Solution1 {
     public char firstUniqChar(String s){
         char result = ' ';
 
-        for (int i = 0; i < s.toCharArray().length; i++) {
-//            String sub = s.substring(i + 1);
-//            System.out.println("subString   :" + sub);
-            if (s.indexOf(s.charAt(i), i + 1) == -1) {
+        for (int i = 0; i < s.length(); i++) {
+            if (s.indexOf(s.charAt(i)) == s.lastIndexOf(s.charAt(i))) {
                 result = s.charAt(i);
                 break;
             }

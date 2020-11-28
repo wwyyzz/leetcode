@@ -1,4 +1,4 @@
-package Question.HashTable.Q389;
+package Question.HashTable.Q389_pass;
 
 import org.junit.Test;
 
