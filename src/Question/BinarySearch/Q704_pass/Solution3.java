@@ -30,18 +30,18 @@ package Question.BinarySearch.Q704_pass;
 public class Solution3 {
     public int search(int[] nums, int target){
 
-        int start = 0;
-        int end = nums.length ;
+        int L = 0;
+        int R = nums.length - 1;
 
+        while (L <= R) {
+            int M = L + ( R - L) / 2;
 
-        while (start <= end) {
-            int mid = start + (end - start) / 2;
-            if (nums[mid] < target) {
-                start = mid + 1;
-            } else if (nums[mid] > target) {
-                end = mid - 1;
-            }else{
-                return mid;
+            if (nums[M] == target) {
+                return M;
+            } else if (M < target) {
+                L = M + 1;
+            } else {
+                R = M - 1;
             }
         }
 

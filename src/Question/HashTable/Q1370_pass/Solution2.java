@@ -62,41 +62,34 @@ public class Solution2 {
     public String sortString(String s){
         StringBuilder result= new StringBuilder();
 
-        HashMap<Character, Integer> map = new HashMap<>();
-        for (char c : s.toCharArray()) {
-            map.put(c, map.getOrDefault(c,0) + 1);
-        }
-
 
         int[] alphabet = new int[26];
-        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
-            alphabet[entry.getKey() - 97] = entry.getValue();
+
+        for (char c : s.toCharArray()) {
+            alphabet[c - 'a']++;
         }
 
         System.out.println(Arrays.toString(alphabet));
 
         int size = s.length();
 
-        int order = 1;
         while (size > 0) {
-            if (order % 2 == 0) {
-                for (int i = alphabet.length - 1; i >= 0; i--) {
-                    if (alphabet[i] != 0) {
-                        result.append((char)(i + 97));
-                        alphabet[i]--;
-                        size--;
-                    }
-                }
-            } else {
-                for (int i = 0; i < alphabet.length; i++) {
-                    if (alphabet[i] != 0) {
-                        result.append((char)(i + 97));
-                        alphabet[i]--;
-                        size--;
-                    }
+            for (int i = 0; i < alphabet.length; i++) {
+                if (alphabet[i] != 0) {
+                    result.append((char)(i + 'a'));
+                    alphabet[i]--;
+                    size--;
                 }
             }
-            order++;
+            for (int i = alphabet.length - 1; i >= 0; i--) {
+                if (alphabet[i] != 0) {
+                    result.append((char)(i + 'a'));
+                    alphabet[i]--;
+                    size--;
+                }
+            }
+
+
         }
 
         System.out.println(result);

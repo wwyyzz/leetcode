@@ -1,4 +1,4 @@
-package Question.Math.Q69_pass;
+package Question.BinarySearch.Q69_pass;
 
 import org.junit.Test;
 

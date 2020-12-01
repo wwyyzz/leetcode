@@ -14,23 +14,8 @@
  * 说明: 8 的平方根是 2.82842...,
  *      由于返回类型是整数，小数部分将被舍去。
  */
-package Question.Math.Q69_pass;
+package Question.BinarySearch.Q69_pass;
 
-/**
- *调用库函数，耍无赖
- *
- 1017 / 1017 个通过测试用例
- 状态：通过
- 执行用时：19 ms
-
- 我的提交执行用时
- 已经战胜 99.94 % 的 java 提交记录
- */
-public class Solution1 {
-    public int mySqrt(int x) {
-        return (int)Math.sqrt(x);
-    }
-}
 
 /**
  * 二分法，int最大开根号也就46340.9，从0~46340之间找到n，n的平方小于x，n+1的平方大于x，就好
@@ -42,19 +27,33 @@ public class Solution1 {
  * 我的提交执行用时
  * 已经战胜 74.84 % 的 java 提交记录
  */
-class Solution2 {
+public class Solution3 {
     public int mySqrt(int x) {
         if ( x >= 2147395600){
             return 46340;
         }
-        for (int i = 0; i <=46340 ; i++) {
-            System.out.println("i * i=" + i*i);
-            System.out.println("i +1 * i+1=" + (i+1)*(i+1));
-            if ((i*i <= x) && ((i+1)*(i+1) > x) ){
-                System.out.println("i am " + i);
-                return i;
-            }
+
+        if (x == 1) {
+            return 1;
         }
+        int L = 0;
+        int R = x / 2;
+
+        while (L <= R) {
+
+            int M = L + (R - L) / 2;
+            System.out.println((long)M * M);
+            System.out.println((long)(M * M));
+            if ((M * M <= x) && ((M + 1) * (M + 1) > x)) {
+                return M;
+            } else if ((long)M * M <= x) {
+                L = M + 1;
+            }else {
+                R = M - 1;
+            }
+
+        }
+
         return 0;
     }
 }

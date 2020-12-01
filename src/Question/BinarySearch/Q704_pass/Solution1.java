@@ -26,15 +26,9 @@ package Question.BinarySearch.Q704_pass;
 
 /**
  执行用时：
- 0 ms
- , 在所有 Java 提交中击败了
- 100.00%
- 的用户
+ 0 ms, 在所有 Java 提交中击败了100.00%的用户
  内存消耗：
- 40.9 MB
- , 在所有 Java 提交中击败了
- 34.43%
- 的用户
+ 40.9 MB, 在所有 Java 提交中击败了34.43%的用户
  */
 public class Solution1 {
     public int search(int[] nums, int target){
